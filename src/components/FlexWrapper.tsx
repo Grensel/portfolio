@@ -7,7 +7,6 @@ type FlexWrapperPropsType = {
     align?: string;
     wrap?: string;
     gap?: string;
-    margin?: string;
 };
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -17,12 +16,9 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     justify-content: ${(props) => props.justify || "center"};
     align-items: ${(props) => props.align || "stretch"};
     gap: ${(props) => props.gap || "none"};
-    margin: ${(props) => props.margin || "none"};
 
     max-width: 1440px;
     margin: 0 auto;
-
-    color: yellow;
 
     @media ${Thems.media.mobile} {
         justify-content: center;

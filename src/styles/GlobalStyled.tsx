@@ -5,6 +5,7 @@ export const GlobalStyled = createGlobalStyle`
     *,
     *::before,
     *::after {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
@@ -32,10 +33,6 @@ button {
     border: transparent;
     border-radius: 5px;
     cursor: pointer;
-}
-
-section {
-    padding: 35px 0;
 }
 
 section:nth-of-type(odd) {

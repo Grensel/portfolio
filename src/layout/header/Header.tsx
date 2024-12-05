@@ -6,7 +6,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify="space-around">
+            <FlexWrapper justify="space-between">
                 <Logo />
                 <HeaderMenu />
             </FlexWrapper>
@@ -15,6 +15,10 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    margin-bottom: -53px;
+    /* margin-bottom: ; */
     background-color: transparent;
+
+    ${FlexWrapper}{
+        padding: 13px 201px;
+}
 `

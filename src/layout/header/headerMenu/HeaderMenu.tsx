@@ -1,17 +1,18 @@
 import styled from "styled-components"
+import { LinkButton } from "../../../components/LinkButton"
 
 export const HeaderMenu = () => {
     return (
         <StyledMeny>
             <MenuList>
                 <MenuItem>
-                    <MenuLink>Skils</MenuLink>
+                    <LinkButton btnType="outline">Skils</LinkButton>
                 </MenuItem>
                 <MenuItem>
-                    <MenuLink>Woks</MenuLink>
+                    <LinkButton btnType="outline">Projects</LinkButton>
                 </MenuItem>
                 <MenuItem>
-                    <MenuLink>Contact</MenuLink>
+                    <LinkButton btnType="primary">Let&apos;s Talk</LinkButton>
                 </MenuItem>
             </MenuList>
         </StyledMeny>
@@ -19,15 +20,15 @@ export const HeaderMenu = () => {
 }
 
 const StyledMeny = styled.nav`
+    padding: 20px 0;
 `
 const MenuList = styled.ul`
     display: flex;
-    
+    gap: 13px;
 `
 const MenuItem = styled.li`
-    
+    &:last-child {
+        margin-left: 11px;
+    }
 `
-const MenuLink = styled.a.attrs((props)=>(({
-    href: props.href || "#",
-})))`
-`
+
