@@ -1,3 +1,91 @@
+@font-face {
+  font-family: 'Epilogue';
+  src: url('./assets/fonts/Epilogue-ExtraBold.eot');
+  src: url('./assets/fonts/Epilogue-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Epilogue-ExtraBold.woff2') format('woff2'),
+      url('./assets/fonts/Epilogue-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('./assets/fonts/Epilogue-Regular.eot');
+  src: url('./assets/fonts/Epilogue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Epilogue-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Epilogue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('./assets/fonts/BigShouldersDisplay-Medium.eot');
+  src: url('./assets/fonts/BigShouldersDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/BigShouldersDisplay-Medium.woff2') format('woff2'),
+      url('./assets/fonts/BigShouldersDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('./assets/fonts/Epilogue-Light.eot');
+  src: url('./assets/fonts/Epilogue-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Epilogue-Light.woff2') format('woff2'),
+      url('./assets/fonts/Epilogue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('./assets/fonts/Epilogue-Bold.eot');
+  src: url('./assets/fonts/Epilogue-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Epilogue-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Epilogue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('./assets/fonts/Epilogue-ExtraLight.eot');
+  src: url('./assets/fonts/Epilogue-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Epilogue-ExtraLight.woff2') format('woff2'),
+      url('./assets/fonts/Epilogue-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.eot');
+  src: url('./assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('./assets/fonts/Epilogue-SemiBold.eot');
+  src: url('./assets/fonts/Epilogue-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Epilogue-SemiBold.woff2') format('woff2'),
+      url('./assets/fonts/Epilogue-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
