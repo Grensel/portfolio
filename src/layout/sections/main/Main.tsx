@@ -20,8 +20,8 @@ export const Main = () => {
 }
 
 export const StyledMein = styled.section`
-    padding: 121px 0;
-    margin-bottom: 67px;
+    padding: 155px 0;
+    margin-bottom: px;
 `
 
 const Photo = styled.img`
@@ -33,7 +33,7 @@ const Photo = styled.img`
 const BackSquare = styled.div`
     position: relative;
     right: 145px;
-    top: 123px;
+    top: 93px;
     margin-left: -200px;
     width: 570px;
     height: 570px;

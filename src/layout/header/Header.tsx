@@ -17,8 +17,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     margin-bottom: -90px;
     background-color: transparent;
-    background-color: blue;
-
+    
     ${FlexWrapper}{
         padding: 13px 201px;
 }
