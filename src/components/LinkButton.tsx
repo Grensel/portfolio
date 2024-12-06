@@ -8,14 +8,10 @@ type LinkButtonPropsType = {
 export const LinkButton = styled.a.attrs((props)=>(({
     href: props.href || "#",
 })))<LinkButtonPropsType>`
-    color: ${Thems.colors.text.title};
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+
 
     ${props => props.btnType === "primary" && css<LinkButtonPropsType>`
-        padding: 11px 20px;
+        padding: 9px 22px;
         background-color: ${Thems.colors.text.title};
         color: ${Thems.colors.primary};
 

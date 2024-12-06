@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Thems } from "../styles/Thems";
 
 type FlexWrapperPropsType = {
     direction?: string;
@@ -19,9 +18,4 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
 
     max-width: 1440px;
     margin: 0 auto;
-
-    @media ${Thems.media.mobile} {
-        justify-content: center;
-        margin: 0;
-    };
 `;

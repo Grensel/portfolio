@@ -6,7 +6,7 @@ import { Thems } from "../../../styles/Thems"
 export const Main = () => {
     return (
         <StyledMein>
-            <FlexWrapper >
+            <Container>
                 <FlexWrapper direction="column">
                     <MainTitel>HELLO <br/>I&apos;M SERGEY</MainTitel>
                     <Description>FRONT-END <br/> DEVELOPER</Description>
@@ -14,45 +14,102 @@ export const Main = () => {
                 <BackSquare>
                     <Photo src={photo} alt="it's me"/>
                 </BackSquare>
-            </FlexWrapper>
+            </Container>
         </StyledMein>
     )
 }
 
 export const StyledMein = styled.section`
-    padding: 155px 0;
-    margin-bottom: px;
+    overflow: hidden;
+    padding: 18vh 0;
+
+    @media ${Thems.media.tablet} {
+        padding: 12vh 0;
+    }
+`
+
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+
+    ${FlexWrapper} {
+        margin: 0; 
+    }
+
+    @media ${Thems.media.tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    };
+
+    @media ${Thems.media.laptop}, ${Thems.media.desktop} {
+        white-space: nowrap;
+    };
 `
 
 const Photo = styled.img`
-    width: 570px;
-    height: 570px;
+    width: 39.6vw;
+    height: 39.6vw;
     rotate: 16.2deg; 
+    min-width: 300px;;
+    min-height: 300px;
     background-color:#F7F7F7;
+
+    @media ${Thems.media.desktop} {
+        width: 570px;
+        height: 570px;
+        rotate: 16.2deg; 
+        background-color:#F7F7F7;
+    }
+
+    @media ${Thems.media.tablet} {
+        min-width: 250px;
+        min-height: 250px;
+    }
 `
+
 const BackSquare = styled.div`
-    position: relative;
-    right: 145px;
-    top: 93px;
-    margin-left: -200px;
-    width: 570px;
-    height: 570px;
-    rotate: -8.7deg; 
+    width: 39.6vw;
+    height: 39.6vw;
+
     background-color:#E7E7E7;
+    rotate: -8.7deg; 
+
+    @media ${Thems.media.desktop} {
+        position: relative;
+        top: 10.8vh;
+        right: 156px;
+        width: 570px;
+        height: 570px;
+    }
+
+    @media ${Thems.media.laptop} {
+        position: relative;
+        top: 10.8vh;
+        right: 11vw;
+    }
+
+
+
+    @media ${Thems.media.tablet} {
+        position: static;
+        margin-top: 12vw;
+        margin-bottom: 6vw;
+        min-width: 250px;
+        min-height: 250px;
+    }
 `
+
 const MainTitel = styled.h1`
     z-index: 1;
-    color: ${Thems.colors.text.title};
-    font-family: 'Epilogue';
-    font-weight: 800;
-    font-size: 150px;
-    line-height: 176px;
 `
 const Description = styled.p`
     z-index: 1;
-    color: ${Thems.colors.text.title};
-    font-family: 'Epilogue';
-    font-weight: 400;
-    font-size: 110px;
-    line-height: 146px;
+    font-size: 125px;
+    line-height: 150px;
+    @media (max-width: 1440px){
+        font-size: calc(30px + 95*(100vw/1440));
+        line-height: calc(35px + 115*(100vw/1440));
+        }
 ` 
