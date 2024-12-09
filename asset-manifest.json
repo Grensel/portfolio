@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d61a1b93.css",
-    "main.js": "/portfolio/static/js/main.2fbf4c3e.js",
+    "main.css": "/portfolio/static/css/main.49afc2f5.css",
+    "main.js": "/portfolio/static/js/main.8738cfc6.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/photo.png": "/portfolio/static/media/photo.07fee951c99dfe985a13.png",
     "static/media/Roboto-Regular.eot": "/portfolio/static/media/Roboto-Regular.d5b3b79380cbe9a83614.eot",
@@ -14,12 +14,14 @@
     "static/media/Epilogue-ExtraLight.eot": "/portfolio/static/media/Epilogue-ExtraLight.e2ffbb14f2f5b0afe8ac.eot",
     "static/media/Epilogue-Bold.ttf": "/portfolio/static/media/Epilogue-Bold.f2f0f65f92ec5eb65421.ttf",
     "static/media/Epilogue-Light.eot": "/portfolio/static/media/Epilogue-Light.b315d84e105bdd39eef7.eot",
+    "static/media/Epilogue-Thin.eot": "/portfolio/static/media/Epilogue-Thin.b7835ae03017d3806ab0.eot",
     "static/media/Epilogue-Regular.eot": "/portfolio/static/media/Epilogue-Regular.1714e4a0f8e393daed1e.eot",
     "static/media/Epilogue-ExtraLight.ttf": "/portfolio/static/media/Epilogue-ExtraLight.bbf4d8756dc2a9a49a37.ttf",
     "static/media/Epilogue-Light.ttf": "/portfolio/static/media/Epilogue-Light.4713666f63ddce6b9ccb.ttf",
     "static/media/Epilogue-Regular.ttf": "/portfolio/static/media/Epilogue-Regular.59790e531b1be78abcfb.ttf",
     "static/media/BigShouldersDisplay-Medium.eot": "/portfolio/static/media/BigShouldersDisplay-Medium.b1d5f2233109bd8b0887.eot",
     "static/media/BigShouldersDisplay-Medium.ttf": "/portfolio/static/media/BigShouldersDisplay-Medium.53c2cfa526fdbad16d7e.ttf",
+    "static/media/Epilogue-Thin.ttf": "/portfolio/static/media/Epilogue-Thin.e79aaca4ee4dfc2229d1.ttf",
     "static/media/Roboto-Regular.woff2": "/portfolio/static/media/Roboto-Regular.86a2beffef3e35f5c867.woff2",
     "static/media/Epilogue-SemiBold.woff2": "/portfolio/static/media/Epilogue-SemiBold.3dc77ebf6e48a7335a7e.woff2",
     "static/media/Epilogue-Bold.woff2": "/portfolio/static/media/Epilogue-Bold.521c3eb02e4a359c8be4.woff2",
@@ -27,14 +29,16 @@
     "static/media/Epilogue-Light.woff2": "/portfolio/static/media/Epilogue-Light.82045fc6918e529d9c08.woff2",
     "static/media/Epilogue-ExtraLight.woff2": "/portfolio/static/media/Epilogue-ExtraLight.4d7fda21fedcf19d26a5.woff2",
     "static/media/Epilogue-Regular.woff2": "/portfolio/static/media/Epilogue-Regular.2a1ef107c9f2f6b4d77c.woff2",
+    "static/media/Epilogue-Thin.woff2": "/portfolio/static/media/Epilogue-Thin.81d0e6b19d513c4f51bd.woff2",
     "static/media/BigShouldersDisplay-Medium.woff2": "/portfolio/static/media/BigShouldersDisplay-Medium.e691c3e49202afd94f31.woff2",
+    "static/media/sprite.svg": "/portfolio/static/media/sprite.979be2b5266a69e9de6bb6c14330ebad.svg",
     "index.html": "/portfolio/index.html",
-    "main.d61a1b93.css.map": "/portfolio/static/css/main.d61a1b93.css.map",
-    "main.2fbf4c3e.js.map": "/portfolio/static/js/main.2fbf4c3e.js.map",
+    "main.49afc2f5.css.map": "/portfolio/static/css/main.49afc2f5.css.map",
+    "main.8738cfc6.js.map": "/portfolio/static/js/main.8738cfc6.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d61a1b93.css",
-    "static/js/main.2fbf4c3e.js"
+    "static/css/main.49afc2f5.css",
+    "static/js/main.8738cfc6.js"
   ]
 }
