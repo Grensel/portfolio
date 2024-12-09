@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { LinkButton } from "../../../components/LinkButton"
+import { Button } from "../../../components/Button"
 import { Thems } from "../../../styles/Thems"
 
 export const HeaderMenu = () => {
@@ -8,14 +8,20 @@ export const HeaderMenu = () => {
             <MenuNav>
                 <MenuList>
                     <MenuItem>
-                        <LinkButton btnType="outline">Skils</LinkButton>
+                        <Button btnType="outline">
+                            <a href="#">Skils</a>
+                        </Button>
                     </MenuItem>
                     <MenuItem>
-                        <LinkButton btnType="outline">Projects</LinkButton>
+                        <Button btnType="outline">
+                            <a href="#">Projects</a>
+                        </Button>
                     </MenuItem>
                 </MenuList>
             </MenuNav>
-            <LinkButton btnType="primary">Let&apos;s Talk</LinkButton>
+            <Button btnType="primary">
+                <PrimaryBtnLink href="#" >Let&apos;s Talk</PrimaryBtnLink>
+            </Button>
             <BurgerMenu />
         </StyledMeny>
     )
@@ -32,11 +38,13 @@ const MenuNav = styled.nav`
         display: none
     }
 `
+
 const MenuList = styled.ul`
     display: flex;
     gap: 1vw;
 
 `
+
 const MenuItem = styled.li`
     &:last-child {
         margin-right: 1vw;
@@ -57,3 +65,8 @@ const BurgerMenu = styled.div`
     }
 `
 
+const PrimaryBtnLink = styled.a.attrs(( {href} )=> ({
+    href: href || "#",
+}))`
+    color: ${Thems.colors.primary};
+`

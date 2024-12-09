@@ -21,24 +21,51 @@ export const GlobalStyled = createGlobalStyle`
         font-weight: 800;
         font-size: 150px;
         line-height: 170px;
+
         @media (max-width: 1440px){
         font-size: calc(35px + 115*(100vw/1440));
         line-height: calc(50px + 120*(100vw/1440));
         }
+    }
 
+    h2 {
+        font-family: 'Epilogue';
+        font-weight: 800;
+        font-size: 120px;
+        line-height: 112.2px;
+
+
+        @media (max-width: 1440px){
+            font-size: calc(35px + 115*(100vw/1440));
+            line-height: calc(50px + 120*(100vw/1440));
+            }
     }
 
     h3 {
-        font-family: 'Epilogue', sans-serif;
-        font-size: 140px;
-        font-weight: 400;
-        line-height: 130px;
-        color: ${Thems.colors.text.title};
+        font-family: 'Epilogue';
+        font-weight: 100;
+        font-size: 70px;
+        line-height: 71.75px;
+    }
 
-        @media ${Thems.media.tablet} {
-            font-size: 90px;
-            line-height: 105px;
-        }
+    h4 {
+        font-family: 'Epilogue';
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 30.75px;
+    }
+
+    h5 {
+        font-family: 'Epilogue';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h6 {
+        font-family: 'Epilogue';
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     a {
@@ -51,26 +78,27 @@ export const GlobalStyled = createGlobalStyle`
     line-height: 24px;
 }
 
-a:hover {
-}
+    a:hover {
+    }
 
-ul {
-    list-style: none;
-}
+    ul {
+        list-style: none;
+    }
 
-button {
-    background-color: unset;
-    border: transparent;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    button {
+        background-color: unset;
+        border: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-section:nth-of-type(odd) {
-    background-color: ${Thems.colors.primary};
-}
+    section:nth-of-type(odd) {
+        background-color: ${Thems.colors.primary};
+    }
 
-section:nth-of-type(even) {
-    background-color: ${Thems.colors.second};
-}
+    section:nth-of-type(even) {
+        background-color: ${Thems.colors.second};
+    }
 
-`;
+    `;
+

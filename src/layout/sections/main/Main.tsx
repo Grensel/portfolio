@@ -31,7 +31,7 @@ export const StyledMein = styled.section`
 const Container = styled.div`
     display: flex;
     justify-content: center;
-    padding-left: 5vw;
+    padding-left: 10vw;
 
     ${FlexWrapper} {
         margin: 0; 
@@ -41,6 +41,7 @@ const Container = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-left: 2vw;
     };
 
     @media ${Thems.media.laptop}, ${Thems.media.desktop} {
@@ -79,7 +80,7 @@ const BackSquare = styled.div`
     @media ${Thems.media.desktop} {
         position: relative;
         top: 10.8vh;
-        right: 156px;
+        right: 194px;
         width: 570px;
         height: 570px;
     }
@@ -87,7 +88,7 @@ const BackSquare = styled.div`
     @media ${Thems.media.laptop} {
         position: relative;
         top: 10.8vh;
-        right: 11vw;
+        right: 13.5vw;
     }
 
 

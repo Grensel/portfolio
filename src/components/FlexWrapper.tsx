@@ -13,7 +13,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     flex-direction: ${(props) => props.direction || "row"};
     flex-wrap: ${(props) => props.wrap || "nowrap"};
     justify-content: ${(props) => props.justify || "center"};
-    align-items: ${(props) => props.align || "stretch"};
+    align-items: ${(props) => props.align || "center"};
     gap: ${(props) => props.gap || "none"};
 
     max-width: 1440px;
