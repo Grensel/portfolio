@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper"
-import { Icon } from "../../../components/Icon"
+import { Icon, StyledSvg } from "../../../components/Icon"
 import { Thems } from "../../../styles/Thems"
 
 export const Skills = () => {
@@ -85,9 +85,16 @@ const SkillCard = styled.div`
     min-width: 300px;
     max-height: 146;
     min-height: 115px;
+    &:hover {
+        ${StyledSvg} {
+            fill: red;
+            transition: 1s;
+        }
+    }
     ${FlexWrapper} {
         min-width: 25%;
     }
+
 `
 
 const SkillNumber = styled.h3`

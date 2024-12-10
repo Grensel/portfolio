@@ -23,7 +23,6 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-    min-height: 50vh;
     padding: 4vw 0;
 `
 const Container = styled.div`
@@ -49,6 +48,5 @@ const Field = styled.input`
     padding: 1vw 2vw;
     border-radius: 1vw;
     max-width: 100%;
-    min-width: 20%;
     field-sizing: content;
 `

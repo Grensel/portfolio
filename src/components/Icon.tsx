@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import sprite from "../assets/img/sprite.svg"
+import { Thems } from "../styles/Thems";
 
 type IconPropsType = {
     iconId: string;
@@ -22,8 +23,6 @@ export const Icon = (props: IconPropsType) => {
     )
 };
 
-const StyledSvg = styled.svg`
-    &:hover {
-        fill: red;
-    }
+export const StyledSvg = styled.svg`
+    fill: ${Thems.colors.second};
 `

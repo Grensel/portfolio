@@ -32,12 +32,12 @@ export const GlobalStyled = createGlobalStyle`
         font-family: 'Epilogue';
         font-weight: 800;
         font-size: 120px;
-        line-height: 112.2px;
+        line-height: 115px;
 
 
         @media (max-width: 1440px){
-            font-size: calc(35px + 115*(100vw/1440));
-            line-height: calc(50px + 120*(100vw/1440));
+            font-size: calc(45px + 75*(100vw/1440));
+            line-height: calc(40px + 75*(100vw/1440));
             }
     }
 

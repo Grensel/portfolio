@@ -13,13 +13,13 @@ export const Footer = () => {
                     <a href="#">
                         <Icon iconId='instagram' viewBox="0 0 18 18" height="100%" width="100%" fill=""/>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <Icon iconId='in' viewBox="0 0 18 18" height="100%" width="100%" fill=""/>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <Icon iconId='x' viewBox="0 0 512 462.799" height="100%" width="100%" fill=""/>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <Icon iconId='facebook' viewBox="0 0 18 18" height="100%" width="100%" fill=""/>
                     </a>
                 </IconsWripper>

@@ -21,7 +21,7 @@ const StyledLogo = styled.a`
     &:hover {
             cursor: pointer;
             border-radius: 20px;
-            box-shadow: 1px 1px 15px #20232e89, -1px -1px 15px #545b7881;
+            box-shadow: 1px 1px 15px #20232e32, -1px -1px 15px #545b7837;
             transition: 500ms;
         }
 
