@@ -7,12 +7,12 @@ export const Main = () => {
     return (
         <StyledMein>
             <Container>
-                <FlexWrapper direction="column">
+                <FlexWrapper direction={"column"}>
                     <MainTitel>HELLO <br/>I&apos;M SERGEY</MainTitel>
                     <Description>FRONT-END <br/> DEVELOPER</Description>
                 </FlexWrapper>
                 <BackSquare>
-                    <Photo src={photo} alt="it's me"/>
+                    <Photo src={photo} alt={"it's me"}/>
                 </BackSquare>
             </Container>
         </StyledMein>

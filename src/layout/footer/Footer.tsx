@@ -7,20 +7,38 @@ export const Footer = () => {
         <StyledFooter>
             <FlexWrapper justify="space-around">
                 <Container>
-                    <Copyright>2024 All Rights Reserved</Copyright>
+                    <Copyright>2025 All Rights Reserved</Copyright>
                 </Container>
                 <IconsWripper>
                     <a href="#">
-                        <Icon iconId='instagram' viewBox="0 0 18 18" height="100%" width="100%" fill=""/>
+                        <Icon 
+                            iconId='in'
+                            height="100%"
+                            width="100%"
+                            />
                     </a>
                     <a href="#">
-                        <Icon iconId='in' viewBox="0 0 18 18" height="100%" width="100%" fill=""/>
+                        <Icon 
+                            iconId='githubwhite'
+                            height="100%"
+                            width="100%"
+                            fill="`${Thems.color.second}`"
+                            />
                     </a>
                     <a href="#">
-                        <Icon iconId='x' viewBox="0 0 512 462.799" height="100%" width="100%" fill=""/>
+                        <Icon 
+                            iconId='tg'
+                            height="100%"
+                            width="100%"
+                            fill="`${Thems.color.second}`"
+                            />
                     </a>
                     <a href="#">
-                        <Icon iconId='facebook' viewBox="0 0 18 18" height="100%" width="100%" fill=""/>
+                        <Icon 
+                            iconId='instagram' 
+                            height="100%" 
+                            width="100%" 
+                            />
                     </a>
                 </IconsWripper>
             </FlexWrapper>

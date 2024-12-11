@@ -48,26 +48,6 @@ export const GlobalStyled = createGlobalStyle`
         line-height: 71.75px;
     }
 
-    h4 {
-        font-family: 'Epilogue';
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 30.75px;
-    }
-
-    h5 {
-        font-family: 'Epilogue';
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    h6 {
-        font-family: 'Epilogue';
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     a {
     cursor: pointer;
     text-decoration: none;

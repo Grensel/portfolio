@@ -13,10 +13,10 @@ type IconPropsType = {
 export const Icon = (props: IconPropsType) => {
     return (
         <StyledSvg
-            width={props.width} 
-            height={props.height}
-            viewBox={props.viewBox}
-            fill={props.fill || "#000000"}
+            width={props.width || "50"} 
+            height={props.height || "50"}
+            viewBox={props.viewBox || "0 0 50 50"}
+            fill={props.fill || `${Thems.colors.second}`}
         >
             <use xlinkHref={ `${sprite}#${props.iconId}` } />
         </StyledSvg>
@@ -24,5 +24,4 @@ export const Icon = (props: IconPropsType) => {
 };
 
 export const StyledSvg = styled.svg`
-    fill: ${Thems.colors.second};
 `

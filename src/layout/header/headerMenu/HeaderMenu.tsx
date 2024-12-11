@@ -8,19 +8,24 @@ export const HeaderMenu = () => {
             <MenuNav>
                 <MenuList>
                     <MenuItem>
-                        <Button btnType="outline">
-                            <a href="#">Skils</a>
+                        <Button as="a" href="#" btnType="outline">
+                            Skils
                         </Button>
                     </MenuItem>
                     <MenuItem>
-                        <Button btnType="outline">
-                            <a href="#">Projects</a>
+                        <Button as="a" href="#" btnType="outline">
+                            Projects
+                        </Button>
+                    </MenuItem>
+                    <MenuItem>
+                        <Button as="a" href="#" btnType="outline">
+                            About me
                         </Button>
                     </MenuItem>
                 </MenuList>
             </MenuNav>
-            <Button btnType="primary">
-                <PrimaryBtnLink href="#" >Let&apos;s Talk</PrimaryBtnLink>
+            <Button as="a" href="#" btnType="primary">
+                Let&apos;s Talk
             </Button>
             <BurgerMenu />
         </StyledMeny>
@@ -63,10 +68,4 @@ const BurgerMenu = styled.div`
     @media ${Thems.media.mobile} {
         display: block;
     }
-`
-
-const PrimaryBtnLink = styled.a.attrs(( {href} )=> ({
-    href: href || "#",
-}))`
-    color: ${Thems.colors.primary};
 `

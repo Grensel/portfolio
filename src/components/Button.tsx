@@ -10,6 +10,7 @@ export const Button = styled.button<LinkButtonPropsType>`
     ${props => props.btnType === "primary" && css<LinkButtonPropsType>`
         padding: 9px 22px;
         background-color: ${Thems.colors.text.title};
+        color: ${Thems.colors.primary};
 
         &:hover {
             box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
