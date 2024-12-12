@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../../components/FlexWrapper"
 import { Icon } from "../../../../components/Icon";
-import { Thems } from "../../../../styles/Thems";
+import { thems } from "../../../../styles/Thems";
 
 type SkillCardPropsType = {
     skillNumber: string
@@ -26,7 +26,7 @@ export const SkillCard = (props: SkillCardPropsType) => {
                                 viewBox={props.viewBox || "0 0 50 50"}
                                 height={props.height || "1em"}
                                 width={props.width || "1em"}
-                                fill={props.fill || `${Thems.colors.second}`}
+                                fill={props.fill || `${thems.colors.text.second}`}
                             />
                             {props.skillTitle}
                         </SkillTitle>
@@ -46,14 +46,14 @@ const StyledCard = styled.div`
 
 const SkillNumber = styled.h3`
     padding-top: 20px;
-    color: ${Thems.colors.primary};
+    color: ${thems.colors.text.second};
 `
 
 const SkillTitle = styled.h4`
     align-self: start;
-    color: ${Thems.colors.primary};
+    color: ${thems.colors.text.second};
 `
 
 const SkillDescription = styled.p`
-    color: ${Thems.colors.primary};
+    color: ${thems.colors.text.second};
 `

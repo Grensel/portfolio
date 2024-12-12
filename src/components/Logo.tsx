@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Thems } from "../styles/Thems"
+import { thems } from "../styles/Thems"
 
 export const Logo = () => {
     return (
@@ -16,18 +16,17 @@ const StyledLogo = styled.a`
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 0;
-    color: ${Thems.colors.text.title};
+    color: ${thems.colors.text.title};
 
     &:hover {
-            cursor: pointer;
-            box-shadow: 1px 1px 15px #a1a2a530, 1px 1px 15px #a1a4ad37;
-            transition: 500ms;
-        }
+        cursor: pointer;
+        box-shadow: inset 4px 4px 6px -5px rgba(0,0,0,0.3), inset -4px -4px 6px -5px rgba(255,255,255,0.8), -0.5px -0.5px 5px rgba(255,255,255,1), 0.5px 0.5px 5px rgba(0,0,0,0.25), 0px 12px 10px -15px rgba(0,0,0,0.15);
+        transition: 500ms;
+    }
 
-        &:active {
-            cursor: pointer;
-            background: linear-gradient(145deg, #2e2d2d, #212121);
-            color:  #ff0000;
-            transition: 1000ms;
-        }
+    &:active{
+        cursor: pointer;
+        box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05);
+        transition: 500ms;
+    }
 `

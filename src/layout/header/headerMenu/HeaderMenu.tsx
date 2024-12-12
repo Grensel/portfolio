@@ -1,27 +1,19 @@
 import styled from "styled-components"
 import { Button } from "../../../components/Button"
-import { Thems } from "../../../styles/Thems"
+import { thems } from "../../../styles/Thems"
 
-export const HeaderMenu = () => {
+export const HeaderMenu = (props: {menuItems: Array<string>}) => {
     return (
         <StyledMeny>
             <MenuNav>
                 <MenuList>
-                    <MenuItem>
-                        <Button as="a" href="#" btnType="outline">
-                            Skils
-                        </Button>
-                    </MenuItem>
-                    <MenuItem>
-                        <Button as="a" href="#" btnType="outline">
-                            Projects
-                        </Button>
-                    </MenuItem>
-                    <MenuItem>
-                        <Button as="a" href="#" btnType="outline">
-                            About
-                        </Button>
-                    </MenuItem>
+                    {props.menuItems.map((item: string, index: number) => { 
+                        return <MenuItem key={index}>
+                            <Button as="a" href="#" btnType="outline">
+                                {item}
+                            </Button>
+                        </MenuItem>
+                    })}
                 </MenuList>
             </MenuNav>
             <Button as="a" href="#" btnType="primary">
@@ -35,18 +27,18 @@ export const HeaderMenu = () => {
 const StyledMeny = styled.div`
     display: flex;
     align-items: center;
-    gap: 2vw;
+    gap: 20px;
 `
 
 const MenuNav = styled.nav`
-    @media ${Thems.media.mobile} {
+    @media ${thems.media.mobile} {
         display: none
     }
 `
 
 const MenuList = styled.ul`
     display: flex;
-    gap: 1vw;
+    gap: 10px;
 
 `
 
@@ -61,11 +53,11 @@ const BurgerMenu = styled.div`
     cursor: pointer;
     width: 10vw;
     height: 0.2vh;
-    background-color: ${Thems.colors.text.title};
+    background-color: ${thems.colors.text.title};
 
 
 
-    @media ${Thems.media.mobile} {
+    @media ${thems.media.mobile} {
         display: block;
     }
 `

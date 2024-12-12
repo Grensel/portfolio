@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import sprite from "../assets/img/sprite.svg"
-import { Thems } from "../styles/Thems";
+import { thems } from "../styles/Thems";
 
 type IconPropsType = {
     iconId: string;
@@ -16,7 +16,7 @@ export const Icon = (props: IconPropsType) => {
             width={props.width || "50"} 
             height={props.height || "50"}
             viewBox={props.viewBox || "0 0 50 50"}
-            fill={props.fill || `${Thems.colors.second}`}
+            fill={props.fill || `${thems.colors.background.second}`}
         >
             <use xlinkHref={ `${sprite}#${props.iconId}` } />
         </StyledSvg>

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Icon } from "../../components/Icon"
 import { FlexWrapper } from "../../components/FlexWrapper"
-import { Thems } from "../../styles/Thems"
+import { thems } from "../../styles/Thems"
 
 export const Footer = () => {
     return(
@@ -15,6 +15,7 @@ export const Footer = () => {
                                 iconId='in'
                                 height="50px"
                                 width="50px"
+                                fill="`${thems.color.footerIcons}`"
                                 />
                         </SocialLink>
                     </SocialItem>
@@ -24,7 +25,7 @@ export const Footer = () => {
                                 iconId='githubwhite'
                                 height="50px"
                                 width="50px"
-                                fill="`${Thems.color.second}`"
+                                fill="`${thems.color.footerIcons}`"
                                 />
                         </SocialLink>
                     </SocialItem>
@@ -34,7 +35,7 @@ export const Footer = () => {
                                 iconId='tg'
                                 height="50px"
                                 width="50px"
-                                fill="`${Thems.color.second}`"
+                                fill="`${thems.color.footerIcons}`"
                                 />
                         </SocialLink>
                     </SocialItem>
@@ -43,7 +44,8 @@ export const Footer = () => {
                             <Icon 
                                 iconId='instagram' 
                                 height="50xp" 
-                                width="50px" 
+                                width="50px"
+                                fill="`${thems.color.footerIcons}`"
                                 />
                         </SocialLink>
                     </SocialItem>
@@ -55,7 +57,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     padding: 2vw 0;
-    background-color: ${Thems.colors.primary};
+    background-color: ${thems.colors.background.primary};
 `
 
 const Copyright = styled.small`

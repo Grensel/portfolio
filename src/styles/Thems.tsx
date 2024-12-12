@@ -1,13 +1,20 @@
-export const Thems = {
+export const thems = {
     colors: {
-        primary:"#FFFFFF",
-        second: "#131212",
+        background: {
+            primary:"#FFFFFF",
+            second: "#131212",
+            additional: "#E7E7E7",
+            button: "#2D2C2C",
+            header: "rgba(255, 255, 255, 0.9)",
+            pseudo: "rgba(231, 231, 231, 1)",
+        },
 
         text: {
             title: "#2D2C2C",
-            description: "#F2F2F2",
-            footer: "#000000",
+            second: "#FFFFFF",
+            additional: "#F2F2F2",
         },
+        footerIcons: "#000000",
     },
 
     media: {

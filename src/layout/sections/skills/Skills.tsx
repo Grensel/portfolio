@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper"
 import { SkillCard } from "./skillCard/SkillCard"
-import { Thems } from "../../../styles/Thems"
+import { thems } from "../../../styles/Thems"
 
 export const Skills = () => {
     return (
@@ -11,41 +11,41 @@ export const Skills = () => {
                     skillTitle={"React"}
                     skillNumber={"01"}
                     iconId={"react"}
-                    fill={`${Thems.colors.primary}`}
+                    fill={`${thems.colors.text.second}`}
                     description={"consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"}
                 />
                 <SkillCard
                     skillNumber={"02"}
                     iconId={"js"}
-                    fill={`${Thems.colors.primary}`}
+                    fill={`${thems.colors.text.second}`}
                     skillTitle={"JavaScript"}
                     description={"consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"}
                 />
                 <SkillCard
                     skillNumber={"03"}
                     iconId={"ts"}
-                    fill={`${Thems.colors.primary}`}
+                    fill={`${thems.colors.text.second}`}
                     skillTitle={"TypeScript"}
                     description={"consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"}
                 />
                 <SkillCard
                     skillNumber={"04"}
                     iconId={"html"}
-                    fill={`${Thems.colors.primary}`}
+                    fill={`${thems.colors.text.second}`}
                     skillTitle={"HTML"}
                     description={"consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"}
                 />
                 <SkillCard
                     skillNumber={"05"}
                     iconId={"githubblack"}
-                    fill={`${Thems.colors.primary}`}
+                    fill={`${thems.colors.text.second}`}
                     skillTitle={"GitHub"}
                     description={"consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"}
                 />
                 <SkillCard
                     skillNumber={"06"}
                     iconId={"scv"}
-                    fill={`${Thems.colors.primary}`}
+                    fill={`${thems.colors.text.second}`}
                     skillTitle={"Styled Components"}
                     description={"consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"}
                 />

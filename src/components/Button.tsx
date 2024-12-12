@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Thems } from "../styles/Thems";
+import { thems } from "../styles/Thems";
 
 type LinkButtonPropsType = {
     btnType?: "primary"|"outline"|"contact"|"project"
@@ -8,12 +8,12 @@ type LinkButtonPropsType = {
 export const Button = styled.button<LinkButtonPropsType>`
 
     ${props => props.btnType === "primary" && css<LinkButtonPropsType>`
-        padding: 9px 22px;
-        background-color: ${Thems.colors.text.title};
-        color: ${Thems.colors.primary};
+        padding: 8px 20px;
+        background-color: ${thems.colors.background.button};
+        color: ${thems.colors.text.second};
 
         &:hover {
-            box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+            box-shadow: 1px 1px 1px #20232e, -1px -1px 1px #545b78;
             color: #d6d6d6;
             transition: 500ms;
         }
@@ -21,14 +21,14 @@ export const Button = styled.button<LinkButtonPropsType>`
         &:active {
             cursor: pointer;
             background: linear-gradient(145deg, #2e2d2d, #212121);
-            box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+            box-shadow: -5px -5px 1px #E7E7E7, 5px 5px 1px #E7E7E7, inset 5px 5px 1px #E7E7E7, inset -5px -5px 1px #E7E7E7;
             transition: 500ms;
         }
     `}
 
     ${props => props.btnType === "outline" && css<LinkButtonPropsType>`
         padding: 11px 10px;
-        color: ${Thems.colors.text.title};
+        color: ${thems.colors.text.title};
 
         &:hover {
             cursor: pointer;
@@ -45,7 +45,7 @@ export const Button = styled.button<LinkButtonPropsType>`
 
     ${props => props.btnType === "project" && css<LinkButtonPropsType>`
         padding: 11px 10px;
-        color: ${Thems.colors.text.title};
+        color: ${thems.colors.text.title};
 
         &:hover {
             cursor: pointer;
@@ -62,7 +62,7 @@ export const Button = styled.button<LinkButtonPropsType>`
 
     ${props => props.btnType === "contact" && css<LinkButtonPropsType>`
         padding: 11px 10px;
-        color: ${Thems.colors.text.title};
+        color: ${thems.colors.text.title};
 
         &:hover {
             cursor: pointer;

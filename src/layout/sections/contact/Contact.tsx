@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Title } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
-import { Thems } from "../../../styles/Thems";
+import { thems } from "../../../styles/Thems";
 import { MyLocation } from "../../../components/MyLocation";
 
 export const Contact = () => {
@@ -50,7 +50,7 @@ const StyledForm = styled.form`
 
 const Field = styled.input`
     background-color: #13121297;
-    color: ${Thems.colors.text.description};
+    color: ${thems.colors.text.additional};
     padding: 1vw 2vw;
     max-width: 100%;
     field-sizing: content;

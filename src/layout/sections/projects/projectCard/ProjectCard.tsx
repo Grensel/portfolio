@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Thems } from "../../../../styles/Thems"
+import { thems } from "../../../../styles/Thems"
 import { FlexWrapper } from "../../../../components/FlexWrapper"
 import { Icon } from "../../../../components/Icon"
 import { Button } from "../../../../components/Button"
@@ -30,7 +30,7 @@ export const Project = (props: ProjectpRropsType) => {
                                     viewBox="0 0 6 11"
                                     height="10%"
                                     width="10%"
-                                    fill={`${Thems.colors.second}`}
+                                    fill={`${thems.colors.text.second}`}
                                 />
                             </Button>
                         </FlexWrapper>
@@ -44,7 +44,7 @@ const ProjectCard = styled.div`
     gap: 1vw;
     background-color: #b6b4b452;
 
-    @media ${Thems.media.tablet} {
+    @media ${thems.media.tablet} {
         flex-direction: column;
     }
 `

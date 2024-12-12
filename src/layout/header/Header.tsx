@@ -2,27 +2,30 @@ import styled from "styled-components";
 import { Logo } from "../../components/Logo";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { Thems } from "../../styles/Thems";
+import { thems } from "../../styles/Thems";
+import { Container } from "../../components/Container";
+
+const items = ["Skills", "Projects", "About"]
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify="space-between" margin="0 auto">
-                <Logo />
-                <HeaderMenu />
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justify="space-between" margin="0 auto">
+                    <Logo />
+                    <HeaderMenu menuItems={items} />
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    margin-bottom: -94px;
-    background-color: transparent;
-    ${FlexWrapper} {
-        padding: 15px 2vw;
-        max-width: 1100px;
-        @media ${Thems.media.mobile} {
-            padding: 17px 2vw;
-        }
-    };
+    background: ${thems.colors.background.header};
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 `
