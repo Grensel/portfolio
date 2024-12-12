@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.49afc2f5.css",
-    "main.js": "/portfolio/static/js/main.14559c56.js",
+    "main.js": "/portfolio/static/js/main.ad93e16c.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/photo.png": "/portfolio/static/media/photo.07fee951c99dfe985a13.png",
     "static/media/Roboto-Regular.eot": "/portfolio/static/media/Roboto-Regular.d5b3b79380cbe9a83614.eot",
@@ -31,14 +31,14 @@
     "static/media/Epilogue-Regular.woff2": "/portfolio/static/media/Epilogue-Regular.2a1ef107c9f2f6b4d77c.woff2",
     "static/media/Epilogue-Thin.woff2": "/portfolio/static/media/Epilogue-Thin.81d0e6b19d513c4f51bd.woff2",
     "static/media/BigShouldersDisplay-Medium.woff2": "/portfolio/static/media/BigShouldersDisplay-Medium.e691c3e49202afd94f31.woff2",
-    "static/media/sprite.svg": "/portfolio/static/media/sprite.979be2b5266a69e9de6bb6c14330ebad.svg",
+    "static/media/sprite.svg": "/portfolio/static/media/sprite.412a5c99229a6a606f2b159bb94aace2.svg",
     "index.html": "/portfolio/index.html",
     "main.49afc2f5.css.map": "/portfolio/static/css/main.49afc2f5.css.map",
-    "main.14559c56.js.map": "/portfolio/static/js/main.14559c56.js.map",
+    "main.ad93e16c.js.map": "/portfolio/static/js/main.ad93e16c.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49afc2f5.css",
-    "static/js/main.14559c56.js"
+    "static/js/main.ad93e16c.js"
   ]
 }
