@@ -7,7 +7,7 @@ import { Thems } from "../../styles/Thems";
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify="space-between">
+            <FlexWrapper justify="space-between" margin="0 auto">
                 <Logo />
                 <HeaderMenu />
             </FlexWrapper>
@@ -25,5 +25,4 @@ const StyledHeader = styled.header`
             padding: 17px 2vw;
         }
     };
-
 `

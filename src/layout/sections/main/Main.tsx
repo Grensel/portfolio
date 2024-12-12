@@ -68,6 +68,28 @@ const Photo = styled.img`
         min-width: 250px;
         min-height: 250px;
     }
+
+    &::before {
+        width: 39.6vw;
+        height: 39.6vw;
+
+        background-color:#F7F7F7;
+        rotate: -18.7deg; 
+
+        @media ${Thems.media.desktop} {
+            position: relative;
+            top: 10.8vh;
+            right: 194px;
+            width: 570px;
+            height: 570px;
+        }
+
+        @media ${Thems.media.laptop} {
+            position: relative;
+            top: 10.8vh;
+            right: 13.5vw;
+        }
+    }
 `
 
 const BackSquare = styled.div`
@@ -102,15 +124,21 @@ const BackSquare = styled.div`
     }
 `
 
-const MainTitel = styled.h1`
+const MainTitel = styled.span`
     z-index: 1;
-`
-const Description = styled.p`
-    z-index: 1;
-    font-size: 125px;
-    line-height: 150px;
+    color: ${Thems.colors.text.title};
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 170px;
+
     @media (max-width: 1440px){
-        font-size: calc(30px + 95*(100vw/1440));
-        line-height: calc(35px + 115*(100vw/1440));
-        }
+    font-size: calc(35px + 115*(100vw/1440));
+    line-height: calc(50px + 120*(100vw/1440));
+    }
+`
+
+const Description = styled.h1`
+    z-index: 1;
+    color: ${Thems.colors.text.title};
 ` 

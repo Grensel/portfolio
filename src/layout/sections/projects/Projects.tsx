@@ -1,12 +1,12 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper"
-import { Title } from "../../../components/Title"
+import { Title } from "../../../components/SectionTitle"
 import { Project } from "./projectCard/ProjectCard"
 
 export const Projects = () => {
     return (
         <StyledProject>
-            <FlexWrapper direction="column">
+            {/* <Contact> */}
                 <Title>My <br/>Projects</Title>
                 <CardsContaioner>
                     <Project
@@ -28,7 +28,7 @@ export const Projects = () => {
                         href={'#'}
                     />
                 </CardsContaioner>
-            </FlexWrapper>
+            {/* </Contact> */}
         </StyledProject>
     )
 }

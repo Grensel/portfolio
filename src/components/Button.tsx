@@ -29,7 +29,6 @@ export const Button = styled.button<LinkButtonPropsType>`
     ${props => props.btnType === "outline" && css<LinkButtonPropsType>`
         padding: 11px 10px;
         color: ${Thems.colors.text.title};
-        border-radius: 15px;
 
         &:hover {
             cursor: pointer;
@@ -47,7 +46,6 @@ export const Button = styled.button<LinkButtonPropsType>`
     ${props => props.btnType === "project" && css<LinkButtonPropsType>`
         padding: 11px 10px;
         color: ${Thems.colors.text.title};
-        border-radius: 15px;
 
         &:hover {
             cursor: pointer;
@@ -65,7 +63,6 @@ export const Button = styled.button<LinkButtonPropsType>`
     ${props => props.btnType === "contact" && css<LinkButtonPropsType>`
         padding: 11px 10px;
         color: ${Thems.colors.text.title};
-        border-radius: 15px;
 
         &:hover {
             cursor: pointer;

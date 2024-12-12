@@ -19,7 +19,7 @@ export const HeaderMenu = () => {
                     </MenuItem>
                     <MenuItem>
                         <Button as="a" href="#" btnType="outline">
-                            About me
+                            About
                         </Button>
                     </MenuItem>
                 </MenuList>

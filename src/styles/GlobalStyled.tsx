@@ -10,21 +10,15 @@ export const GlobalStyled = createGlobalStyle`
         padding: 0;
     }
 
-    .body {
-        margin: 0 auto;
-        color: ${Thems.colors.text}
-    }
-
     h1 {
-        color: ${Thems.colors.text.title};
-        font-family: 'Epilogue', sans-serif;
-        font-weight: 800;
-        font-size: 150px;
-        line-height: 170px;
+    font-family: 'Epilogue';
+    font-weight: 400;
+    font-size: 125px;
+    line-height: 150px;
 
-        @media (max-width: 1440px){
-        font-size: calc(35px + 115*(100vw/1440));
-        line-height: calc(50px + 120*(100vw/1440));
+    @media (max-width: 1440px){
+        font-size: calc(30px + 95*(100vw/1440));
+        line-height: calc(35px + 115*(100vw/1440));
         }
     }
 
@@ -34,18 +28,10 @@ export const GlobalStyled = createGlobalStyle`
         font-size: 120px;
         line-height: 115px;
 
-
         @media (max-width: 1440px){
             font-size: calc(45px + 75*(100vw/1440));
             line-height: calc(40px + 75*(100vw/1440));
             }
-    }
-
-    h3 {
-        font-family: 'Epilogue';
-        font-weight: 100;
-        font-size: 70px;
-        line-height: 71.75px;
     }
 
     a {
@@ -79,6 +65,4 @@ export const GlobalStyled = createGlobalStyle`
     section:nth-of-type(even) {
         background-color: ${Thems.colors.second};
     }
-
-    `;
-
+`;

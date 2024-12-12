@@ -1,46 +1,53 @@
 import styled from "styled-components"
 import { Icon } from "../../components/Icon"
 import { FlexWrapper } from "../../components/FlexWrapper"
+import { Thems } from "../../styles/Thems"
 
 export const Footer = () => {
     return(
         <StyledFooter>
             <FlexWrapper justify="space-around">
-                <Container>
-                    <Copyright>2025 All Rights Reserved</Copyright>
-                </Container>
-                <IconsWripper>
-                    <a href="#">
-                        <Icon 
-                            iconId='in'
-                            height="100%"
-                            width="100%"
-                            />
-                    </a>
-                    <a href="#">
-                        <Icon 
-                            iconId='githubwhite'
-                            height="100%"
-                            width="100%"
-                            fill="`${Thems.color.second}`"
-                            />
-                    </a>
-                    <a href="#">
-                        <Icon 
-                            iconId='tg'
-                            height="100%"
-                            width="100%"
-                            fill="`${Thems.color.second}`"
-                            />
-                    </a>
-                    <a href="#">
-                        <Icon 
-                            iconId='instagram' 
-                            height="100%" 
-                            width="100%" 
-                            />
-                    </a>
-                </IconsWripper>
+                <Copyright>2025 All Rights Reserved</Copyright>
+                <SocialList>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon 
+                                iconId='in'
+                                height="50px"
+                                width="50px"
+                                />
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon 
+                                iconId='githubwhite'
+                                height="50px"
+                                width="50px"
+                                fill="`${Thems.color.second}`"
+                                />
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon 
+                                iconId='tg'
+                                height="50px"
+                                width="50px"
+                                fill="`${Thems.color.second}`"
+                                />
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink>
+                            <Icon 
+                                iconId='instagram' 
+                                height="50xp" 
+                                width="50px" 
+                                />
+                        </SocialLink>
+                    </SocialItem>
+                </SocialList>
             </FlexWrapper>
         </StyledFooter>
     )
@@ -48,16 +55,17 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     padding: 2vw 0;
-`
-
-const IconsWripper = styled.div`
-    display: flex;
-    width: 7vw;
-    gap: 1vw;
+    background-color: ${Thems.colors.primary};
 `
 
 const Copyright = styled.small`
-    min-width:  2vw;
 `
 
-const Container = styled.div``
+const SocialList = styled.ul`
+display: flex;
+`
+
+const SocialItem = styled.li``
+
+const SocialLink = styled.a`
+`

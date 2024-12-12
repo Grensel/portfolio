@@ -20,8 +20,7 @@ const StyledLogo = styled.a`
 
     &:hover {
             cursor: pointer;
-            border-radius: 20px;
-            box-shadow: 1px 1px 15px #20232e32, -1px -1px 15px #545b7837;
+            box-shadow: 1px 1px 15px #a1a2a530, 1px 1px 15px #a1a4ad37;
             transition: 500ms;
         }
 
@@ -29,7 +28,6 @@ const StyledLogo = styled.a`
             cursor: pointer;
             background: linear-gradient(145deg, #2e2d2d, #212121);
             color:  #ff0000;
-            box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
             transition: 1000ms;
         }
 `
