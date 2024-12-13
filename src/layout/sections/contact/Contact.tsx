@@ -4,13 +4,14 @@ import { Title } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
 import { thems } from "../../../styles/Thems";
 import { MyLocation } from "../../../components/MyLocation";
+import { Container } from "../../../components/Container";
 
 export const Contact = () => {
     return (
         <StyledContact>
             <Container>
-                <Title color="second">Contact</Title>
-                <FlexWrapper justify="center">
+                <Title color="second">CONTACT</Title>
+                <FlexWrapper justify="center" gap={"100px"}>
                     <FlexWrapper direction="column">
                         <StyledForm>
                             <FlexWrapper justify="space-between">
@@ -37,8 +38,6 @@ export const Contact = () => {
 const StyledContact = styled.section`
     padding: 4vw 0;
 `
-const Container = styled.div`
-`
 
 const StyledForm = styled.form`
     display: flex;
@@ -53,5 +52,4 @@ const Field = styled.input`
     color: ${thems.colors.text.additional};
     padding: 1vw 2vw;
     max-width: 100%;
-    field-sizing: content;
 `

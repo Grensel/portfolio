@@ -6,98 +6,40 @@ import { thems } from "../../../styles/Thems"
 export const Main = () => {
     return (
         <StyledMein>
-            <Container>
-                <FlexWrapper direction={"column"}>
-                    <MainTitel>HELLO <br/>I&apos;M SERGEY</MainTitel>
-                    <Description>FRONT-END <br/> DEVELOPER</Description>
+                <FlexWrapper justify={"center"} align="center" wrap="wrap">
+                    <FlexWrapper direction={"column"} justify={"center"} align="center">
+                        <MainTitel>HELLO <br/>I&apos;M SERGEY</MainTitel>
+                        <Description>FRONT-END <br/> DEVELOPER</Description>
+                    </FlexWrapper>
+                    <BackSquare>
+                        <Photo src={photo} alt={"it's me"}/>
+                    </BackSquare>
                 </FlexWrapper>
-                <BackSquare>
-                    <Photo src={photo} alt={"it's me"}/>
-                </BackSquare>
-            </Container>
         </StyledMein>
     )
 }
 
 export const StyledMein = styled.section`
-    overflow: hidden;
-    padding: 18vh 0;
-
-    @media ${thems.media.tablet} {
-        padding: 12vh 0;
-    }
-`
-
-const Container = styled.div`
     display: flex;
     justify-content: center;
-    padding-left: 10vw;
-
-    ${FlexWrapper} {
-        margin: 0; 
-    }
-
-    @media ${thems.media.tablet} {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 2vw;
-    };
-
-    @media ${thems.media.laptop}, ${thems.media.desktop} {
-        white-space: nowrap;
-    };
+    align-items: center;
+    min-height: 100vh;
 `
 
 const Photo = styled.img`
-    width: 39.6vw;
-    height: 39.6vw;
-    rotate: 16.2deg; 
-    min-width: 300px;;
-    min-height: 300px;
+    width: 470px;
+    height: 470px;
+    rotate: 16.2deg;
     background-color:#F7F7F7;
-
-    @media ${thems.media.desktop} {
-        width: 570px;
-        height: 570px;
-        rotate: 16.2deg; 
-        background-color:#F7F7F7;
-    }
-
-    @media ${thems.media.tablet} {
-        min-width: 250px;
-        min-height: 250px;
-    }
-
-    &::before {
-        width: 39.6vw;
-        height: 39.6vw;
-
-        background-color:#F7F7F7;
-        rotate: -18.7deg; 
-
-        @media ${thems.media.desktop} {
-            position: relative;
-            top: 10.8vh;
-            right: 194px;
-            width: 570px;
-            height: 570px;
-        }
-
-        @media ${thems.media.laptop} {
-            position: relative;
-            top: 10.8vh;
-            right: 13.5vw;
-        }
-    }
 `
 
 const BackSquare = styled.div`
-    width: 39.6vw;
-    height: 39.6vw;
-
+    position: relative;
+    right: 120px;
+    width: 470px;
+    height: 470px;
     background-color:#E7E7E7;
-    rotate: -8.7deg; 
+    rotate: -8.7deg;
 `
 
 const MainTitel = styled.span`
@@ -105,8 +47,7 @@ const MainTitel = styled.span`
     color: ${thems.colors.text.title};
     font-family: 'Epilogue', sans-serif;
     font-weight: 800;
-    font-size: 150px;
-    line-height: 170px;
+    font-size: 130px;
 `
 
 const Description = styled.h1`

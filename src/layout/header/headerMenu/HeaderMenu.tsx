@@ -38,24 +38,19 @@ const MenuNav = styled.nav`
 
 const MenuList = styled.ul`
     display: flex;
-    gap: 10px;
+    gap: 12px;
 
 `
 
 const MenuItem = styled.li`
-    &:last-child {
-        margin-right: 1vw;
-    }
 `
 
 const BurgerMenu = styled.div`
     display: none;
     cursor: pointer;
     width: 10vw;
-    height: 0.2vh;
+    height: 2px;
     background-color: ${thems.colors.text.title};
-
-
 
     @media ${thems.media.mobile} {
         display: block;

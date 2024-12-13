@@ -44,13 +44,19 @@ const StyledCard = styled.div`
     gap: 20px;
 `
 
-const SkillNumber = styled.h3`
+const SkillNumber = styled.h4`
     padding-top: 20px;
+    font-family: "Epilogue";
+    font-size: 70px;
+    font-weight: 100;
     color: ${thems.colors.text.second};
 `
 
-const SkillTitle = styled.h4`
+const SkillTitle = styled.h3`
     align-self: start;
+    font-family: "Epilogue";
+    font-size: 30px;
+    font-weight: 300;
     color: ${thems.colors.text.second};
 `
 

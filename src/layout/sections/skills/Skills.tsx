@@ -6,7 +6,7 @@ import { thems } from "../../../styles/Thems"
 export const Skills = () => {
     return (
         <StyledSkills>
-            <FlexWrapper wrap={"wrap"}>
+            <FlexWrapper justify={"center"} wrap={"wrap"} gap={"60px 8px"}>
                 <SkillCard
                     skillTitle={"React"}
                     skillNumber={"01"}
@@ -55,8 +55,5 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
-    padding: 7.7vw 2vw;
-    ${FlexWrapper} {
-        gap: 1vw;
-    }
+    padding: 100px 50px;
 `

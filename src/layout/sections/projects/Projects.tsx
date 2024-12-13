@@ -8,42 +8,36 @@ export const Projects = () => {
     return (
         <StyledProject>
             <Container>
-                <Title>My <br/>Projects</Title>
-                <CardsContaioner>
-                    <Project
-                        projectType={"Mental Health"}
-                        projectTitle={"Find Peace in Meditation"}
-                        projectDiscription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."}
-                        href={'#'}
-                    />
-                    <Project
-                        projectType={"Mental Health"}
-                        projectTitle={"Find Peace in Meditation"}
-                        projectDiscription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."}
-                        href={'#'}
-                    />
-                    <Project
-                        projectType={"Mental Health"}
-                        projectTitle={"Find Peace in Meditation"}
-                        projectDiscription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."}
-                        href={'#'}
-                    />
-                </CardsContaioner>
+                <FlexWrapper direction={"column"} gap={"70px"}>
+                    <Title>MY <br/>PROJECTS</Title>
+                    <FlexWrapper direction={"column"} gap={"80px"}>
+                        <Project
+                            projectType={"Mental Health"}
+                            workType={"A Case Study"}
+                            projectTitle={"Find Peace in Meditation"}
+                            projectDiscription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."}
+                            href={'#'}
+                        />
+                        <Project
+                            projectType={"Fashion Show"}
+                            workType={"A Case Study"}
+                            projectTitle={"Enjoy Fashion Shows From Home"}
+                            projectDiscription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."}
+                            href={'#'}
+                        />
+                        <Project
+                            projectType={"Barbeque"}
+                            workType={"Branding"}
+                            projectTitle={"Chicken Barbeque Never Goes Wrong"}
+                            projectDiscription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."}
+                            href={'#'}
+                        />
+                    </FlexWrapper>
+                </FlexWrapper>
             </Container>
         </StyledProject>
     )
 }
 
 const StyledProject = styled.section`
-    padding: 10vw 0;
-    ${FlexWrapper} { 
-        gap: 3vw;
-        padding: 0 5vw;
-    }
-`
-const CardsContaioner = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    gap: 2vw;
 `

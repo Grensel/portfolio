@@ -17,4 +17,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     align-items: ${(props) => props.align || "stretch"};
     gap: ${(props) => props.gap || "none"};
     margin: ${(props) => props.margin || "none"};
+
+    height: 100%;
 `;
