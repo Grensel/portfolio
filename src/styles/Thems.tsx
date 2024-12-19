@@ -1,21 +1,23 @@
 export const thems = {
   colors: {
     background: {
-      primary: "#FFFFFF",
-      second: "#131212",
-      additional: "#E7E7E7",
+      primary: "rgba(255, 255, 255, 1)",
+      second: "rgba(19, 18, 18, 1)",
+      secondhover: "rgba(19, 18, 18, 0.5)",
+      additional: "rgba(231, 231, 231, 1)",
       button: "rgba(45, 44, 44, 1)",
       buttonhover: "rgba(45, 44, 44, 0.9)",
       header: "rgba(255, 255, 255, 0.9)",
       pseudo: "rgba(231, 231, 231, 1)",
+      photo: "rgba(247, 247, 247, 1)",
     },
 
     text: {
-      title: "#2D2C2C",
-      second: "#FFFFFF",
-      additional: "#F2F2F2",
+      title: "rgba(45, 44, 44, 1)",
+      second: "rgba(255, 255, 255, 1)",
+      additional: "rgba(242, 242, 242, 1)",
     },
-    footerIcons: "#000000",
+    footerIcons: "rgba(0, 0, 0, 1)",
   },
 
   media: {

@@ -2,23 +2,21 @@ import styled, { css } from "styled-components";
 import { thems } from "../styles/Thems";
 
 type LinkButtonPropsType = {
-  btnType?: "contact" | "project";
+  btnType?: "contact";
 };
 
 export const Button = styled.button<LinkButtonPropsType>`
+  padding: 10px 20px;
+
   ${(props) =>
     props.btnType === "contact" &&
     css<LinkButtonPropsType>`
-      padding: 10px 10px;
-      color: ${thems.colors.text.title};
+      background-color: ${thems.colors.background.second};
+      color: ${thems.colors.text.second};
 
       &:hover {
         cursor: pointer;
-        box-shadow: inset 4px 4px 6px -5px rgba(0, 0, 0, 0.3),
-          inset -4px -4px 6px -5px rgba(255, 255, 255, 0.8),
-          -0.5px -0.5px 5px rgba(255, 255, 255, 1),
-          0.5px 0.5px 5px rgba(0, 0, 0, 0.25),
-          0px 12px 10px -15px rgba(0, 0, 0, 0.15);
+        background-color: ${thems.colors.background.secondhover};
         transition: 500ms;
       }
 

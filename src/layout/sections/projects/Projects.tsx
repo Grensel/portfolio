@@ -4,6 +4,10 @@ import { Title } from "../../../components/SectionTitle";
 import { Project } from "./projectCard/ProjectCard";
 import { Container } from "../../../components/Container";
 
+import ProjectImg1 from "../../../assets/img/image.png";
+import ProjectImg2 from "../../../assets/img/image.png";
+import ProjectImg3 from "../../../assets/img/image.png";
+
 export const Projects = () => {
   return (
     <StyledProject>
@@ -15,6 +19,7 @@ export const Projects = () => {
           </Title>
           <FlexWrapper direction={"column"} gap={"80px"}>
             <Project
+              urlImg={ProjectImg1}
               projectType={"Mental Health"}
               workType={"A Case Study"}
               projectTitle={"Find Peace in Meditation"}
@@ -24,6 +29,7 @@ export const Projects = () => {
               href={"#"}
             />
             <Project
+              urlImg={ProjectImg2}
               projectType={"Fashion Show"}
               workType={"A Case Study"}
               projectTitle={"Enjoy Fashion Shows From Home"}
@@ -33,6 +39,7 @@ export const Projects = () => {
               href={"#"}
             />
             <Project
+              urlImg={ProjectImg3}
               projectType={"Barbeque"}
               workType={"Branding"}
               projectTitle={"Chicken Barbeque Never Goes Wrong"}

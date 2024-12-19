@@ -2,20 +2,20 @@ import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Icon } from "../../../../components/Icon";
-import { Button } from "../../../../components/Button";
 import { Link } from "../../../../components/Link";
 
 type ProjectpRropsType = {
-  projectType: string;
-  workType: string;
-  projectTitle: string;
-  projectDiscription: string;
-  href: string;
+  projectType?: string;
+  workType?: string;
+  projectTitle?: string;
+  projectDiscription?: string;
+  href?: string;
+  urlImg?: string;
 };
 
 export const Project = (props: ProjectpRropsType) => {
   return (
-    <ProjectCard>
+    <ProjectCard urlImg={props.urlImg}>
       <FlexWrapper direction={"column"} gap={"18px"}>
         <ProjectTypeName>{props.projectType}</ProjectTypeName>
         <ProjectTitle>
@@ -33,7 +33,7 @@ export const Project = (props: ProjectpRropsType) => {
             viewBox={"0 0 6 11"}
             height={"10px"}
             width={"10px"}
-            fill={`${thems.colors.background.second}`}
+            fill={`${thems.colors.text.second}`}
           />
         </Link>
       </FlexWrapper>
@@ -41,27 +41,32 @@ export const Project = (props: ProjectpRropsType) => {
   );
 };
 
-const ProjectCard = styled.div`
+const ProjectCard = styled.div<ProjectpRropsType>`
   display: flex;
   gap: 85px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(${(props) => props.urlImg}) no-repeat;
+  background-size: cover;
   padding: 94px 46px 100px;
-  background-color: rgba(231, 231, 231, 0.8);
   @media ${thems.media.tablet} {
     flex-direction: column;
   }
 `;
 
 const ProjectTypeName = styled.h3`
-  font-family: "Epilogue";
+  font-family: "Epilogue", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  color: ${thems.colors.text.second};
 `;
 
 const ProjectTitle = styled.h4`
   max-width: 430px;
-  font-family: "Epilogue";
+  font-family: "Epilogue", sans-serif;
   font-weight: 800;
   font-size: 45px;
+  color: ${thems.colors.text.second};
+
   span {
     font-weight: 200;
   }
@@ -70,8 +75,9 @@ const ProjectTitle = styled.h4`
 const ProjectDiscription = styled.p`
   max-width: 433px;
   margin-top: 38px;
-  font-family: "Epilogue";
+  font-family: "Epilogue", sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
+  color: ${thems.colors.text.second};
 `;

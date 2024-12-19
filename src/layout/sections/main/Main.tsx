@@ -35,7 +35,7 @@ const Photo = styled.img`
   width: 470px;
   height: 470px;
   rotate: 16.2deg;
-  background-color: #f7f7f7;
+  background-color: ${thems.colors.background.photo};
 `;
 
 const BackSquare = styled.div`
@@ -43,7 +43,7 @@ const BackSquare = styled.div`
   right: 120px;
   width: 470px;
   height: 470px;
-  background-color: #e7e7e7;
+  background-color: ${thems.colors.background.pseudo};
   rotate: -8.7deg;
 `;
 

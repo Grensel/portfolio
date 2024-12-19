@@ -15,7 +15,7 @@ export const Footer = () => {
                 iconId="in"
                 height="50px"
                 width="50px"
-                fill="`${thems.color.footerIcons}`"
+                fill={`${thems.colors.footerIcons}`}
               />
             </SocialLink>
           </SocialItem>
@@ -25,7 +25,7 @@ export const Footer = () => {
                 iconId="githubwhite"
                 height="50px"
                 width="50px"
-                fill="`${thems.color.footerIcons}`"
+                fill={`${thems.colors.footerIcons}`}
               />
             </SocialLink>
           </SocialItem>
@@ -35,7 +35,7 @@ export const Footer = () => {
                 iconId="tg"
                 height="50px"
                 width="50px"
-                fill="`${thems.color.footerIcons}`"
+                fill={`${thems.colors.footerIcons}`}
               />
             </SocialLink>
           </SocialItem>
@@ -45,7 +45,7 @@ export const Footer = () => {
                 iconId="instagram"
                 height="50xp"
                 width="50px"
-                fill="`${thems.color.footerIcons}`"
+                fill={`${thems.colors.footerIcons}`}
               />
             </SocialLink>
           </SocialItem>

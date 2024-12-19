@@ -45,7 +45,7 @@ const StyledCard = styled.div`
 const SkillNumber = styled.h4`
   width: 80px;
   padding-top: 14px;
-  font-family: "Epilogue";
+  font-family: "Epilogue", sans-serif;
   font-size: 70px;
   font-weight: 100;
   color: ${thems.colors.text.second};
@@ -53,14 +53,14 @@ const SkillNumber = styled.h4`
 
 const SkillTitle = styled.h3`
   align-self: start;
-  font-family: "Epilogue";
+  font-family: "Epilogue", sans-serif;
   font-size: 30px;
   font-weight: 300;
   color: ${thems.colors.text.second};
 `;
 
 const SkillDescription = styled.p`
-  font-family: "Epilogue";
+  font-family: "Epilogue", sans-serif;
   font-size: 18px;
   font-weight: 200;
   line-height: 22.14px;

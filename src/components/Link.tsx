@@ -36,7 +36,7 @@ export const Link = styled.a.attrs((href) => ({
   ${(props) =>
     props.linkType === "outline" &&
     css<LinkPropsType>`
-      padding: 11px 10px;
+      padding: 10px 10px;
       color: ${thems.colors.text.title};
 
       &:hover {
@@ -65,7 +65,7 @@ export const Link = styled.a.attrs((href) => ({
     css<LinkPropsType>`
       padding: 10px 0;
       align-self: flex-start;
-      color: ${thems.colors.text.title};
+      color: ${thems.colors.text.second};
 
       &:hover {
         cursor: pointer;
