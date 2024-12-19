@@ -11,12 +11,12 @@ export const Button = styled.button<LinkButtonPropsType>`
   ${(props) =>
     props.btnType === "contact" &&
     css<LinkButtonPropsType>`
-      background-color: ${thems.colors.background.second};
+      background-color: ${thems.colors.background.button};
       color: ${thems.colors.text.second};
 
       &:hover {
         cursor: pointer;
-        background-color: ${thems.colors.background.secondhover};
+        background-color: ${thems.colors.background.buttonhover};
         transition: 500ms;
       }
 

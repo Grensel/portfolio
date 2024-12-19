@@ -38,12 +38,12 @@ export const GlobalStyled = createGlobalStyle`
 
   input {
     font-family: 'Epilogue', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   textarea {
     font-family: 'Epilogue', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   ul {

@@ -9,7 +9,7 @@ export const Contact = () => {
   return (
     <StyledContact>
       <Container>
-        <Title color={"second"}>CONTACT</Title>
+        <Title>CONTACT</Title>
         <FlexWrapper justify={"space-around"} gap={"20px"} wrap={"wrap"}>
           <ContactBox>
             <FlexWrapper direction="column" gap={"20px"}>
@@ -70,10 +70,10 @@ const ContactBox = styled.div`
 `;
 
 const ContactTitle = styled.h3`
-  color: ${thems.colors.text.additional};
+  color: ${thems.colors.text.title};
   font-family: "Epilogue", sans-serif;
   font-size: 48px;
-  font-weight: 254;
+  font-weight: 600;
 `;
 const StyledForm = styled.form`
   display: flex;
@@ -83,20 +83,21 @@ const StyledForm = styled.form`
   max-width: 450px;
   padding: 20px;
   gap: 16px;
-  background-color: #57575747;
+  background-color: ${thems.colors.background.pseudo};
 `;
 
 const Field = styled.input`
-  background-color: ${thems.colors.background.second};
-  color: ${thems.colors.text.additional};
+  background-color: ${thems.colors.background.photo};
+  color: ${thems.colors.footer};
   padding: 10px 20px;
   resize: vertical;
   width: 100%;
   height: 100%;
+  border: none;
 `;
 
 const FieldTitle = styled.label`
-  color: ${thems.colors.text.second};
+  color: ${thems.colors.text.title};
 `;
 
 const GoogleMap = styled.map`

@@ -6,6 +6,7 @@ import { Skills } from "./layout/sections/skills/Skills";
 import { Projects } from "./layout/sections/projects/Projects";
 import { Contact } from "./layout/sections/contact/Contact";
 import { Footer } from "./layout/footer/Footer";
+import { About } from "./layout/sections/about/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Main />
         <Skills />
         <Projects />
+        <About />
         <Contact />
         <Footer />
       </Body>
