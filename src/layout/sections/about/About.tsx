@@ -1,108 +1,38 @@
-import styled from "styled-components";
+import React from "react";
+import { S } from "./About_Styles";
 import { Title } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { thems } from "../../../styles/Thems";
 
 import Tree from "../../../assets/img/Bonsai.jpg";
 import Snowboard from "../../../assets/img/Snow.jpg";
-import { font } from "../../../styles/Common";
 
-export const About = () => {
+export const About: React.FC = () => {
   return (
-    <StyledAbout>
+    <S.About>
       <Container>
         <FlexWrapper gap={60} justify="space-between">
-          <Bonsai>
+          <S.Bonsai>
             <Title color={"second"}>About Me</Title>
-            <DescriptionSpan>Growing Bonsai:</DescriptionSpan>
-            <DescriptionBonsai>
+            <S.DescriptionSpan>Growing Bonsai</S.DescriptionSpan>
+            <S.DescriptionBonsai>
               This hobby helps me develop patience and attention to detail. I
               enjoy the process of shaping and caring for these miniature trees,
               which teaches me to plan and care for long-term result
-            </DescriptionBonsai>
-            <AboutImg src={Tree} alt="bonsaiImg"></AboutImg>
-          </Bonsai>
-          <Snow>
-            <DescriptionSpan>Snow in winter</DescriptionSpan>
-            <DescriptionSnow>
+            </S.DescriptionBonsai>
+            <S.AboutImg src={Tree} alt="bonsaiImg"></S.AboutImg>
+          </S.Bonsai>
+          <S.Snow>
+            <S.DescriptionSpan>Snow in winter</S.DescriptionSpan>
+            <S.DescriptionSnow>
               brings me special joy and teaches me to conquer new heights -
               after all, it’s snowboarding time;) it helps me develop physical
               endurance and maintains team spirit when we ride with friends
-            </DescriptionSnow>
-            <AboutImg src={Snowboard} alt="snowboardImg"></AboutImg>
-          </Snow>
+            </S.DescriptionSnow>
+            <S.AboutImg src={Snowboard} alt="snowboardImg"></S.AboutImg>
+          </S.Snow>
         </FlexWrapper>
       </Container>
-    </StyledAbout>
+    </S.About>
   );
 };
-
-const StyledAbout = styled.section`
-  ${FlexWrapper} {
-    @media ${thems.media.tablet} {
-      flex-wrap: wrap;
-    }
-  }
-`;
-
-const Snow = styled.div`
-  max-width: 440px;
-  @media ${thems.media.tablet} {
-    max-width: none;
-  }
-`;
-
-const Bonsai = styled.div`
-  max-width: 540px;
-  @media ${thems.media.tablet} {
-    max-width: none;
-  }
-`;
-const DescriptionBonsai = styled.p`
-  width: 80%;
-  margin-bottom: 150px;
-  ${font({
-    family: "Roboto",
-    weight: 400,
-    color: thems.colors.text.additional,
-    lineHeight: "27px",
-  })}
-  font-size: 18px;
-
-  @media ${thems.media.tablet} {
-    margin-bottom: 50px;
-  }
-`;
-
-const DescriptionSnow = styled.p`
-  margin-bottom: 150px;
-  ${font({
-    family: "Roboto",
-    weight: 400,
-    color: thems.colors.text.additional,
-    lineHeight: "27px",
-  })}
-  font-size: 18px;
-
-  @media ${thems.media.tablet} {
-    margin-bottom: 50px;
-  }
-`;
-
-const DescriptionSpan = styled.span`
-  ${font({
-    weight: 254,
-    color: thems.colors.text.additional,
-    lineHeight: "70px",
-    Fmax: 48,
-    Fmin: 43,
-  })}
-`;
-
-const AboutImg = styled.img`
-  width: 100%;
-  @media ${thems.media.tablet} {
-    width: 80%;
-  }
-`;

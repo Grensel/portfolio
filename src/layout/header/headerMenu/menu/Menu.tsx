@@ -1,38 +1,52 @@
+import React from "react";
 import styled, { css } from "styled-components";
-import { thems } from "../../../styles/Thems";
-import { Link } from "../../../components/Link";
+import { Link } from "../../../../components/Link";
+import { thems } from "../../../../styles/Thems";
 
-export const BurgerMenu = (props: { menuItems: Array<string> }) => {
+export const Menu: React.FC<{ menuItems: Array<string> }> = (props: {
+  menuItems: Array<string>;
+}) => {
   return (
-    <StyledBurgerMenu>
-      <BurgerButton isOpen={false}>
-        <span></span>
-      </BurgerButton>
-      <MenuPopup isOpen={false}>
-        <MenuList>
-          {props.menuItems.map((item: string, index: number) => {
-            return (
-              <MenuItem key={index}>
-                <Link href="#" linkType="menu">
-                  {item}
-                </Link>
-              </MenuItem>
-            );
-          })}
-        </MenuList>
-        <Link href="#" linkType="primary">
-          Let&apos;s Talk
-        </Link>
-      </MenuPopup>
-    </StyledBurgerMenu>
+    <MenuList>
+      {props.menuItems.map((item: string, index: number) => {
+        return (
+          <MenuItem key={index}>
+            <Link href="#" linkType="menu">
+              {item}
+            </Link>
+          </MenuItem>
+        );
+      })}
+    </MenuList>
   );
 };
 
-const StyledBurgerMenu = styled.nav`
-  display: none;
+// Desktop Menu
+
+const DesktopMenu = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+
+const MenuList = styled.ul`
+  display: flex;
+  gap: 12px;
   @media ${thems.media.tablet} {
-    display: block;
+    flex-direction: column;
+    gap: 22px;
   }
+`;
+
+const MenuItem = styled.li``;
+
+// Mobile Menu
+
+const BurgerMenu = styled.nav`
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
+  padding: 25px;
 `;
 
 const BurgerButton = styled.div<{ isOpen: boolean }>`
@@ -50,8 +64,8 @@ const BurgerButton = styled.div<{ isOpen: boolean }>`
     background-color: ${thems.colors.background.button};
 
     position: absolute;
-    left: 45px;
-    bottom: 68px;
+    left: 35px;
+    bottom: 60px;
 
     ${(props) =>
       props.isOpen &&
@@ -113,10 +127,9 @@ const MenuPopup = styled.div<{ isOpen: boolean }>`
     `}
 `;
 
-const MenuList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-`;
-
-const MenuItem = styled.li``;
+export const S = {
+  DesktopMenu,
+  BurgerMenu,
+  BurgerButton,
+  MenuPopup,
+};

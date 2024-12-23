@@ -1,8 +1,8 @@
-import styled from "styled-components";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Icon } from "../../../../components/Icon";
 import { thems } from "../../../../styles/Thems";
-import { font } from "../../../../styles/Common";
+import React from "react";
+import { S } from "../Skills_Styles";
 
 type SkillCardPropsType = {
   skillNumber: string;
@@ -15,57 +15,27 @@ type SkillCardPropsType = {
   description: string;
 };
 
-export const SkillCard = (props: SkillCardPropsType) => {
+export const SkillCard: React.FC<SkillCardPropsType> = (
+  props: SkillCardPropsType
+) => {
   return (
-    <StyledCard>
+    <S.Card>
       <FlexWrapper gap={25}>
-        <SkillNumber>{props.skillNumber}.</SkillNumber>
+        <S.SkillNumber>{props.skillNumber}.</S.SkillNumber>
         <FlexWrapper direction="column" gap={5}>
           <FlexWrapper gap={6}>
             <Icon
               iconId={props.iconId}
               viewBox={props.viewBox || "0 0 50 50"}
-              height={props.height || "20px"}
-              width={props.width || "20px"}
+              height={props.height || "20"}
+              width={props.width || "20"}
               fill={props.fill || `${thems.colors.text.second}`}
             />
-            <SkillTitle>{props.skillTitle}</SkillTitle>
+            <S.SkillTitle>{props.skillTitle}</S.SkillTitle>
           </FlexWrapper>
-          <SkillDescription>{props.description}</SkillDescription>
+          <S.SkillDescription>{props.description}</S.SkillDescription>
         </FlexWrapper>
       </FlexWrapper>
-    </StyledCard>
+    </S.Card>
   );
 };
-
-const StyledCard = styled.div``;
-
-const SkillNumber = styled.h4`
-  padding-top: 14px;
-  ${font({
-    weight: 100,
-    color: thems.colors.text.second,
-    Fmin: 45,
-    Fmax: 70,
-  })}
-`;
-
-const SkillTitle = styled.h3`
-  align-self: start;
-  ${font({
-    weight: 300,
-    color: thems.colors.text.second,
-    Fmin: 20,
-    Fmax: 25,
-  })}
-  word-spacing: nowrap;
-`;
-
-const SkillDescription = styled.p`
-  ${font({
-    weight: 200,
-    color: thems.colors.text.second,
-    Fmin: 14,
-    Fmax: 18,
-  })}
-`;

@@ -1,82 +1,76 @@
-import styled from "styled-components";
-import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SkillCard } from "./skillCard/SkillCard";
 import { thems } from "../../../styles/Thems";
+import React from "react";
+import { S } from "./Skills_Styles";
 
-export const Skills = () => {
+const SkillData = [
+  {
+    skillNumber: "01",
+    skillTitle: "React",
+    iconId: "react",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+  {
+    skillNumber: "02",
+    skillTitle: "JavaScript",
+    iconId: "js",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+  {
+    skillNumber: "03",
+    skillTitle: "TypeScript",
+    iconId: "ts",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+  {
+    skillNumber: "04",
+    skillTitle: "HTML",
+    iconId: "html",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+  {
+    skillNumber: "05",
+    skillTitle: "GitHub",
+    iconId: "githubblack",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+  {
+    skillNumber: "06",
+    skillTitle: "Styled Components",
+    iconId: "scv",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+];
+
+export const Skills: React.FC = () => {
   return (
-    <StyledSkills>
-      <GridBox>
-        <SkillCard
-          skillTitle={"React"}
-          skillNumber={"01"}
-          iconId={"react"}
-          fill={`${thems.colors.text.second}`}
-          description={
-            "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
-          }
-        />
-        <SkillCard
-          skillNumber={"02"}
-          iconId={"js"}
-          fill={`${thems.colors.text.second}`}
-          skillTitle={"JavaScript"}
-          description={
-            "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
-          }
-        />
-        <SkillCard
-          skillNumber={"03"}
-          iconId={"ts"}
-          fill={`${thems.colors.text.second}`}
-          skillTitle={"TypeScript"}
-          description={
-            "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
-          }
-        />
-        <SkillCard
-          skillNumber={"04"}
-          iconId={"html"}
-          fill={`${thems.colors.text.second}`}
-          skillTitle={"HTML"}
-          description={
-            "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
-          }
-        />
-        <SkillCard
-          skillNumber={"05"}
-          iconId={"githubblack"}
-          fill={`${thems.colors.text.second}`}
-          skillTitle={"GitHub"}
-          description={
-            "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
-          }
-        />
-        <SkillCard
-          skillNumber={"06"}
-          iconId={"scv"}
-          fill={`${thems.colors.text.second}`}
-          skillTitle={"Styled Components"}
-          description={
-            "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
-          }
-        />
-      </GridBox>
-    </StyledSkills>
+    <S.Skills>
+      <S.GridBox>
+        {SkillData.map((s, index) => {
+          return (
+            <SkillCard
+              key={index}
+              skillNumber={s.skillNumber}
+              iconId={s.iconId}
+              skillTitle={s.skillTitle}
+              fill={s.fill}
+              description={s.description}
+            />
+          );
+        })}
+      </S.GridBox>
+    </S.Skills>
   );
 };
-
-const StyledSkills = styled.section`
-  padding: 100px 30px;
-  ${FlexWrapper} {
-    max-width: 1500px;
-  }
-`;
-
-const GridBox = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(315px, auto));
-  gap: 60px 10px;
-`;
