@@ -14,7 +14,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
   flex-direction: ${(props) => props.direction || "none"};
   flex-wrap: ${(props) => props.wrap || "none"};
-  justify-content: ${(props) => props.justify || "flex-none"};
+  justify-content: ${(props) => props.justify || "none"};
   align-items: ${(props) => props.align || "none"};
   gap: ${(props) => props.gap || "none"};
 

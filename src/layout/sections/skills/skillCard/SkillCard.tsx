@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Icon } from "../../../../components/Icon";
 import { thems } from "../../../../styles/Thems";
+import { font } from "../../../../styles/Common";
 
 type SkillCardPropsType = {
   skillNumber: string;
@@ -17,15 +18,15 @@ type SkillCardPropsType = {
 export const SkillCard = (props: SkillCardPropsType) => {
   return (
     <StyledCard>
-      <FlexWrapper gap={"34px"}>
+      <FlexWrapper gap={"25px"}>
         <SkillNumber>{props.skillNumber}.</SkillNumber>
-        <FlexWrapper direction="column" gap={"2px"}>
-          <FlexWrapper gap={"10px"}>
+        <FlexWrapper direction="column" gap={"5px"}>
+          <FlexWrapper gap={"6px"}>
             <Icon
               iconId={props.iconId}
               viewBox={props.viewBox || "0 0 50 50"}
-              height={props.height || "30px"}
-              width={props.width || "30px"}
+              height={props.height || "20px"}
+              width={props.width || "20px"}
               fill={props.fill || `${thems.colors.text.second}`}
             />
             <SkillTitle>{props.skillTitle}</SkillTitle>
@@ -40,26 +41,31 @@ export const SkillCard = (props: SkillCardPropsType) => {
 const StyledCard = styled.div``;
 
 const SkillNumber = styled.h4`
-  width: 80px;
   padding-top: 14px;
-  font-family: "Epilogue", sans-serif;
-  font-size: 70px;
-  font-weight: 100;
-  color: ${thems.colors.text.second};
+  ${font({
+    weight: 100,
+    color: thems.colors.text.second,
+    Fmin: 45,
+    Fmax: 70,
+  })}
 `;
 
 const SkillTitle = styled.h3`
   align-self: start;
-  font-family: "Epilogue", sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  color: ${thems.colors.text.second};
+  ${font({
+    weight: 300,
+    color: thems.colors.text.second,
+    Fmin: 20,
+    Fmax: 25,
+  })}
+  word-spacing: nowrap;
 `;
 
 const SkillDescription = styled.p`
-  font-family: "Epilogue", sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 22.14px;
-  color: ${thems.colors.text.second};
+  ${font({
+    weight: 200,
+    color: thems.colors.text.second,
+    Fmin: 14,
+    Fmax: 18,
+  })}
 `;

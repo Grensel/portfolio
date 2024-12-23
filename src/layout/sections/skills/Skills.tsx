@@ -67,16 +67,16 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  padding: 100px 50px;
+  padding: 100px 30px;
   ${FlexWrapper} {
     max-width: 1500px;
   }
 `;
 
 const GridBox = styled.div`
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(315px, auto));
   gap: 60px 10px;
 `;
