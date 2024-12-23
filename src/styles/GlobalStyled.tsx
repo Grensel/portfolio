@@ -24,7 +24,6 @@ export const GlobalStyled = createGlobalStyle`
     font-family: 'Epilogue', sans-serif;
     font-weight: 800;
     font-size: 120px;
-    line-height: 112.2px;
   }
 
   a {

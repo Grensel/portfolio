@@ -90,4 +90,9 @@ const SocialList = styled.ul`
 
 const SocialItem = styled.li``;
 
-const SocialLink = styled.a``;
+const SocialLink = styled.a`
+  position: relative;
+  &:hover {
+    bottom: 4px;
+  }
+`;

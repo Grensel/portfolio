@@ -12,5 +12,7 @@ export const Title = styled.h2<TitleComponentType>`
     props.color === "second" &&
     css<TitleComponentType>`
       color: ${thems.colors.text.additional};
+      font-weight: 900;
+      font-size: 100px;
     `}
 `;

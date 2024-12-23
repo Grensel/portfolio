@@ -28,7 +28,7 @@ export const Contact = () => {
                 <FieldTitle htmlFor={"textarea"}>You massage</FieldTitle>
                 <Field
                   id={"textarea"}
-                  placeholder={"You massage"}
+                  placeholder={"Your massage"}
                   as={"textarea"}
                 ></Field>
                 <FlexWrapper height="auto" gap={"16px"}>
@@ -44,7 +44,6 @@ export const Contact = () => {
           </ContactBox>
           <ContactBox>
             <FlexWrapper direction="column" gap={"20px"}>
-              <ContactTitle>My location</ContactTitle>
               <GoogleMap>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301014.5093529799!2d27.264429562590674!3d53.88419040449878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sby!4v1732564049506!5m2!1sru!2sby"
@@ -84,16 +83,28 @@ const StyledForm = styled.form`
   padding: 20px;
   gap: 16px;
   background-color: ${thems.colors.background.pseudo};
+
+  textarea {
+    resize: none;
+  }
 `;
 
 const Field = styled.input`
   background-color: ${thems.colors.background.photo};
   color: ${thems.colors.footer};
   padding: 10px 20px;
-  resize: vertical;
   width: 100%;
   height: 100%;
   border: none;
+
+  &::placeholder {
+    color: ${thems.colors.text.pseudo};
+    text-transform: capitalize;
+  }
+
+  &:focus-visible {
+    outline: 1px solid ${thems.colors.background.second};
+  }
 `;
 
 const FieldTitle = styled.label`

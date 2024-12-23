@@ -6,7 +6,7 @@ import { thems } from "../../../styles/Thems";
 export const Skills = () => {
   return (
     <StyledSkills>
-      <FlexWrapper justify={"center"} wrap={"wrap"} gap={"60px 8px"}>
+      <GridBox>
         <SkillCard
           skillTitle={"React"}
           skillNumber={"01"}
@@ -61,11 +61,22 @@ export const Skills = () => {
             "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue"
           }
         />
-      </FlexWrapper>
+      </GridBox>
     </StyledSkills>
   );
 };
 
 const StyledSkills = styled.section`
   padding: 100px 50px;
+  ${FlexWrapper} {
+    max-width: 1500px;
+  }
+`;
+
+const GridBox = styled.div`
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+  gap: 60px 10px;
 `;

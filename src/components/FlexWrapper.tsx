@@ -12,12 +12,11 @@ type FlexWrapperPropsType = {
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
-  flex-direction: ${(props) => props.direction || "row"};
-  flex-wrap: ${(props) => props.wrap || "nowrap"};
-  justify-content: ${(props) => props.justify || "flex-start"};
-  align-items: ${(props) => props.align || "stretch"};
+  flex-direction: ${(props) => props.direction || "none"};
+  flex-wrap: ${(props) => props.wrap || "none"};
+  justify-content: ${(props) => props.justify || "flex-none"};
+  align-items: ${(props) => props.align || "none"};
   gap: ${(props) => props.gap || "none"};
-  margin: ${(props) => props.margin || "none"};
 
   height: ${(props) => props.height || "100%"};
 `;

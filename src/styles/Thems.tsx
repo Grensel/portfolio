@@ -15,14 +15,14 @@ export const thems = {
       title: "rgba(45, 44, 44, 1)",
       second: "rgba(255, 255, 255, 1)",
       additional: "rgba(242, 242, 242, 1)",
+      pseudo: "rgba(80, 80, 80, 1)",
     },
     footer: "rgba(0, 0, 0, 1)",
   },
 
   media: {
     desktop: "screen and (min-width: 1440px)",
-    laptop: "screen and (max-width: 1440px)",
-    tablet: "screen and (max-width: 764px)",
-    mobile: "screen and (max-width: 420px)",
+    tablet: "screen and (max-width: 768px)",
+    mobile: "screen and (max-width: 576px)",
   },
 };

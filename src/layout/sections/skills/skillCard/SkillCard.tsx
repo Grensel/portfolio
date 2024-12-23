@@ -37,10 +37,7 @@ export const SkillCard = (props: SkillCardPropsType) => {
   );
 };
 
-const StyledCard = styled.div`
-  max-width: 440px;
-  max-height: 146px;
-`;
+const StyledCard = styled.div``;
 
 const SkillNumber = styled.h4`
   width: 80px;

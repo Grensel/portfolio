@@ -32,8 +32,7 @@ export const StyledMein = styled.section`
 `;
 
 const Photo = styled.img`
-  width: 470px;
-  height: 470px;
+  max-width: 470px;
   rotate: 16.2deg;
   background-color: ${thems.colors.background.photo};
 `;
@@ -41,8 +40,7 @@ const Photo = styled.img`
 const BackSquare = styled.div`
   position: relative;
   right: 120px;
-  width: 470px;
-  height: 470px;
+  max-width: 470px;
   background-color: ${thems.colors.background.pseudo};
   rotate: -8.7deg;
 `;
