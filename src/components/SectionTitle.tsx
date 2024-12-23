@@ -15,7 +15,7 @@ export const Title = styled.h2<TitleComponentType>`
       ${font({
         weight: 900,
         color: thems.colors.text.additional,
-        Fmin: 65,
+        Fmin: 46,
         Fmax: 100,
       })}
     `}

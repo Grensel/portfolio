@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <StyledAbout>
       <Container>
-        <FlexWrapper gap={60} wrap={"wrap"} justify="space-between">
+        <FlexWrapper gap={60} justify="space-between">
           <Bonsai>
             <Title color={"second"}>About Me</Title>
             <DescriptionSpan>Growing Bonsai:</DescriptionSpan>
@@ -38,40 +38,56 @@ export const About = () => {
   );
 };
 
-const StyledAbout = styled.section``;
+const StyledAbout = styled.section`
+  ${FlexWrapper} {
+    @media ${thems.media.tablet} {
+      flex-wrap: wrap;
+    }
+  }
+`;
 
 const Snow = styled.div`
   max-width: 440px;
+  @media ${thems.media.tablet} {
+    max-width: none;
+  }
 `;
 
 const Bonsai = styled.div`
   max-width: 540px;
+  @media ${thems.media.tablet} {
+    max-width: none;
+  }
 `;
 const DescriptionBonsai = styled.p`
   width: 80%;
   margin-bottom: 150px;
-
   ${font({
     family: "Roboto",
     weight: 400,
     color: thems.colors.text.additional,
     lineHeight: "27px",
   })}
-
   font-size: 18px;
+
+  @media ${thems.media.tablet} {
+    margin-bottom: 50px;
+  }
 `;
 
 const DescriptionSnow = styled.p`
   margin-bottom: 150px;
-
   ${font({
     family: "Roboto",
     weight: 400,
     color: thems.colors.text.additional,
     lineHeight: "27px",
   })}
-
   font-size: 18px;
+
+  @media ${thems.media.tablet} {
+    margin-bottom: 50px;
+  }
 `;
 
 const DescriptionSpan = styled.span`
@@ -86,4 +102,7 @@ const DescriptionSpan = styled.span`
 
 const AboutImg = styled.img`
   width: 100%;
+  @media ${thems.media.tablet} {
+    width: 80%;
+  }
 `;
