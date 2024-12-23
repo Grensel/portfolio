@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { thems } from "./Thems";
+import { font } from "./Common";
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -10,29 +11,33 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
   }
 
-  body {
-    line-height: 1.2;
-  }
 
   h1 {
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 400;
-    font-size: 120px;
+      ${font({
+        color: `${thems.colors.text.title}`,
+        Fmax: 120,
+        Fmin: 45,
+      })};
   }
 
   h2 {
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 800;
-    font-size: 120px;
+    ${font({
+      color: `${thems.colors.text.title}`,
+      weight: 800,
+      Fmax: 120,
+      Fmin: 65,
+    })};
   }
 
   a {
     cursor: pointer;
     text-decoration: none;
-    color: ${thems.colors.text.title};
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    ${font({
+      color: `${thems.colors.text.title}`,
+      weight: 400,
+      Fmax: 16,
+      Fmin: 14,
+    })};
   }
 
   input {
