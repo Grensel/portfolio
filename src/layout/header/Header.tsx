@@ -30,4 +30,7 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 100;
+  @media ${thems.media.tablet} {
+    padding: 0;
+  }
 `;

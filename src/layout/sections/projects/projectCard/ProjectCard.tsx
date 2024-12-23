@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Link } from "../../../../components/Link";
+import { font } from "../../../../styles/Common";
 
 type ProjectpRropsType = {
   projectType?: string;
@@ -18,7 +19,7 @@ export const Project = (props: ProjectpRropsType) => {
       <FlexWrapper direction={"column"} gap={"18px"}>
         <ProjectTypeName>{props.projectType}</ProjectTypeName>
         <ProjectTitle>
-          <span>{props.workType}_</span>
+          <Bigspan>{props.workType}_</Bigspan>
           <br />
           {props.projectTitle}
         </ProjectTitle>
@@ -40,34 +41,47 @@ const ProjectCard = styled.div<ProjectpRropsType>`
   padding: 94px 46px 100px;
   @media ${thems.media.tablet} {
     flex-direction: column;
+    gap: 24px;
+    padding: 66px 15px 80px;
   }
 `;
 
 const ProjectTypeName = styled.h3`
-  font-family: "Epilogue", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: ${thems.colors.text.second};
+  ${font({ weight: 600, color: thems.colors.text.second, Fmin: 15, Fmax: 16 })}
 `;
 
 const ProjectTitle = styled.h4`
   max-width: 430px;
-  font-family: "Epilogue", sans-serif;
-  font-weight: 800;
-  font-size: 45px;
-  color: ${thems.colors.text.second};
-
-  span {
-    font-weight: 200;
-  }
+  ${font({
+    weight: 800,
+    color: thems.colors.text.second,
+    Fmin: 43,
+    Fmax: 45,
+  })}
+`;
+const Bigspan = styled.span`
+  ${font({
+    weight: 200,
+    color: thems.colors.text.second,
+    Fmin: 43,
+    Fmax: 45,
+  })}
 `;
 
 const ProjectDiscription = styled.p`
   max-width: 433px;
   margin-top: 38px;
-  font-family: "Epilogue", sans-serif;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  color: ${thems.colors.text.second};
+
+  @media ${thems.media.tablet} {
+    margin-top: 0;
+    max-width: 600px;
+  }
+
+  ${font({
+    weight: 400,
+    color: thems.colors.text.second,
+    Fmin: 17,
+    Fmax: 18,
+    lineHeight: "25px",
+  })}
 `;

@@ -50,8 +50,8 @@ const BurgerButton = styled.div<{ isOpen: boolean }>`
     background-color: ${thems.colors.background.button};
 
     position: absolute;
-    left: 40px;
-    bottom: 50px;
+    left: 45px;
+    bottom: 68px;
 
     ${(props) =>
       props.isOpen &&
