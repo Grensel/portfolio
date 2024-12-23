@@ -21,5 +21,5 @@ export const font = ({
   font-weight: ${weight || 400};
   color: ${color || thems.colors.text.title};
   line-height: ${lineHeight || 1.2};
-  font-size: clamp(${Fmin}px, calc( (100vw - 375px)/(1440 - 375) * (${Fmax} - ${Fmin}) + ${Fmin}px), ${Fmax}px)
+  font-size: clamp(${Fmin}px, calc( (100vw - 375px)/(1440 - 375) * (${Fmax} - ${Fmin}) + ${Fmin}px), ${Fmax}px);
 `;

@@ -6,6 +6,7 @@ import { thems } from "../../../styles/Thems";
 
 import Tree from "../../../assets/img/Bonsai.jpg";
 import Snowboard from "../../../assets/img/Snow.jpg";
+import { font } from "../../../styles/Common";
 
 export const About = () => {
   return (
@@ -49,25 +50,38 @@ const Bonsai = styled.div`
 const DescriptionBonsai = styled.p`
   width: 80%;
   margin-bottom: 150px;
-  font-family: "Roboto", sans-serif;
+
+  ${font({
+    family: "Roboto",
+    weight: 400,
+    color: thems.colors.text.additional,
+    lineHeight: "27px",
+  })}
+
   font-size: 18px;
-  font-weight: 400;
-  color: ${thems.colors.text.additional};
 `;
 
 const DescriptionSnow = styled.p`
   margin-bottom: 150px;
-  font-family: "Roboto", sans-serif;
+
+  ${font({
+    family: "Roboto",
+    weight: 400,
+    color: thems.colors.text.additional,
+    lineHeight: "27px",
+  })}
+
   font-size: 18px;
-  font-weight: 400;
-  color: ${thems.colors.text.additional};
 `;
 
 const DescriptionSpan = styled.span`
-  font-family: "Epilogue" sans-serif;
-  font-size: 32px;
-  font-weight: 254;
-  color: ${thems.colors.text.additional};
+  ${font({
+    weight: 254,
+    color: thems.colors.text.additional,
+    lineHeight: "70px",
+    Fmax: 48,
+    Fmin: 43,
+  })}
 `;
 
 const AboutImg = styled.img`
