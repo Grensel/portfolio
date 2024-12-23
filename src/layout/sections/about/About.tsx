@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <StyledAbout>
       <Container>
-        <FlexWrapper gap={"60px"} wrap={"wrap"} justify="space-between">
+        <FlexWrapper gap={60} wrap={"wrap"} justify="space-between">
           <Bonsai>
             <Title color={"second"}>About Me</Title>
             <DescriptionSpan>Growing Bonsai:</DescriptionSpan>

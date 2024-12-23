@@ -18,10 +18,10 @@ type SkillCardPropsType = {
 export const SkillCard = (props: SkillCardPropsType) => {
   return (
     <StyledCard>
-      <FlexWrapper gap={"25px"}>
+      <FlexWrapper gap={25}>
         <SkillNumber>{props.skillNumber}.</SkillNumber>
-        <FlexWrapper direction="column" gap={"5px"}>
-          <FlexWrapper gap={"6px"}>
+        <FlexWrapper direction="column" gap={5}>
+          <FlexWrapper gap={6}>
             <Icon
               iconId={props.iconId}
               viewBox={props.viewBox || "0 0 50 50"}

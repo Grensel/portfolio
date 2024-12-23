@@ -45,7 +45,7 @@ export const Projects = () => {
             MY <br />
             PROJECTS
           </Title>
-          <FlexWrapper direction={"column"} gap={"80px"}>
+          <FlexWrapper direction={"column"} gap={80}>
             <Project
               urlImg={ProjectImg1}
               projectType={"Mental Health"}

@@ -16,7 +16,7 @@ type ProjectpRropsType = {
 export const Project = (props: ProjectpRropsType) => {
   return (
     <ProjectCard urlImg={props.urlImg}>
-      <FlexWrapper direction={"column"} gap={"18px"}>
+      <FlexWrapper direction={"column"} gap={18}>
         <ProjectTypeName>{props.projectType}</ProjectTypeName>
         <ProjectTitle>
           <Bigspan>{props.workType}_</Bigspan>
@@ -24,7 +24,7 @@ export const Project = (props: ProjectpRropsType) => {
           {props.projectTitle}
         </ProjectTitle>
       </FlexWrapper>
-      <FlexWrapper direction={"column"} gap={"40px"}>
+      <FlexWrapper direction={"column"} gap={40}>
         <ProjectDiscription>{props.projectDiscription}</ProjectDiscription>
         <Link linkType={"project"}>View More</Link>
       </FlexWrapper>
@@ -35,7 +35,7 @@ export const Project = (props: ProjectpRropsType) => {
 const ProjectCard = styled.div<ProjectpRropsType>`
   display: flex;
   gap: 85px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
     url(${(props) => props.urlImg || null}) no-repeat;
   background-size: cover;
   padding: 94px 46px 100px;
