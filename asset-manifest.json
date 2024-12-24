@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.49afc2f5.css",
-    "main.js": "/portfolio/static/js/main.9471c1c4.js",
+    "main.css": "/portfolio/static/css/main.13e4e08b.css",
+    "main.js": "/portfolio/static/js/main.90253555.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/image.png": "/portfolio/static/media/image.955304bbefd7019501fa.png",
     "static/media/Roboto-Regular.eot": "/portfolio/static/media/Roboto-Regular.d5b3b79380cbe9a83614.eot",
@@ -34,14 +34,14 @@
     "static/media/Epilogue-Thin.woff2": "/portfolio/static/media/Epilogue-Thin.81d0e6b19d513c4f51bd.woff2",
     "static/media/BigShouldersDisplay-Medium.woff2": "/portfolio/static/media/BigShouldersDisplay-Medium.e691c3e49202afd94f31.woff2",
     "static/media/Bonsai.jpg": "/portfolio/static/media/Bonsai.dfdb9e64fdde911a3f12.jpg",
-    "static/media/sprite.svg": "/portfolio/static/media/sprite.fe29b4ba65434dd467ec237fb9001a51.svg",
+    "static/media/sprite.svg": "/portfolio/static/media/sprite.255ac99c68e91d036ec7598ab5f81fec.svg",
     "index.html": "/portfolio/index.html",
-    "main.49afc2f5.css.map": "/portfolio/static/css/main.49afc2f5.css.map",
-    "main.9471c1c4.js.map": "/portfolio/static/js/main.9471c1c4.js.map",
+    "main.13e4e08b.css.map": "/portfolio/static/css/main.13e4e08b.css.map",
+    "main.90253555.js.map": "/portfolio/static/js/main.90253555.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49afc2f5.css",
-    "static/js/main.9471c1c4.js"
+    "static/css/main.13e4e08b.css",
+    "static/js/main.90253555.js"
   ]
 }
