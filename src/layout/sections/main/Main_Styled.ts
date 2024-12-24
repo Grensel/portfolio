@@ -57,6 +57,9 @@ const MainTitel = styled.span`
 
 const Description = styled.h1`
   z-index: 1;
+  p {
+    display: none;
+  }
 `;
 
 export const S = {

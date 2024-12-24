@@ -2,6 +2,7 @@ import { SkillCard } from "./skillCard/SkillCard";
 import { thems } from "../../../styles/Thems";
 import React from "react";
 import { S } from "./Skills_Styles";
+import { Fade } from "react-awesome-reveal";
 
 const SkillData = [
   {
@@ -56,20 +57,22 @@ const SkillData = [
 
 export const Skills: React.FC = () => {
   return (
-    <S.Skills>
+    <S.Skills id={"skills"}>
       <S.GridBox>
-        {SkillData.map((s, index) => {
-          return (
-            <SkillCard
-              key={index}
-              skillNumber={s.skillNumber}
-              iconId={s.iconId}
-              skillTitle={s.skillTitle}
-              fill={s.fill}
-              description={s.description}
-            />
-          );
-        })}
+        <Fade cascade={true} damping={0.1}>
+          {SkillData.map((s, index) => {
+            return (
+              <SkillCard
+                key={index}
+                skillNumber={s.skillNumber}
+                iconId={s.iconId}
+                skillTitle={s.skillTitle}
+                fill={s.fill}
+                description={s.description}
+              />
+            );
+          })}
+        </Fade>
       </S.GridBox>
     </S.Skills>
   );

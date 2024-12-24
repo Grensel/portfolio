@@ -2,7 +2,7 @@ import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { MyLink } from "../../../../components/Link";
 import { S } from "../Projects_Styled";
 
-type ProjectpRropsType = {
+type SlyderRropsType = {
   projectType?: string;
   workType?: string;
   projectTitle?: string;
@@ -11,11 +11,11 @@ type ProjectpRropsType = {
   urlImg?: string;
 };
 
-export const ProjectCard: React.FC<ProjectpRropsType> = (
-  props: ProjectpRropsType
+export const SlideCard: React.FC<SlyderRropsType> = (
+  props: SlyderRropsType
 ) => {
   return (
-    <S.ProjectCard urlImg={props.urlImg}>
+    <S.SlideCard urlImg={props.urlImg}>
       <FlexWrapper direction={"column"} gap={18}>
         <S.ProjectTypeName>{props.projectType}</S.ProjectTypeName>
         <S.ProjectTitle>
@@ -30,6 +30,6 @@ export const ProjectCard: React.FC<ProjectpRropsType> = (
           View More
         </MyLink>
       </FlexWrapper>
-    </S.ProjectCard>
+    </S.SlideCard>
   );
 };

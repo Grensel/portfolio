@@ -1,13 +1,16 @@
 import styled, { css } from "styled-components";
 import { thems } from "../styles/Thems";
+import { Link } from "react-scroll";
 
 type LinkPropsType = {
   linkType: "primary" | "menu" | "project";
-  href?: string;
+  to: string;
+  smooth?: boolean;
 };
 
-export const Link = styled.a.attrs((href) => ({
-  href: href || "#",
+export const MyLink = styled(Link).attrs((props: LinkPropsType) => ({
+  to: props.to || "#",
+  smooth: props.smooth || true,
 }))<LinkPropsType>`
   ${(props) =>
     props.linkType === "primary" &&
@@ -15,8 +18,10 @@ export const Link = styled.a.attrs((href) => ({
       padding: 8px 20px;
       background-color: ${thems.colors.background.button};
       color: ${thems.colors.text.second};
+      transition: 500ms;
 
-      &:hover {
+      &:hover,
+      &.active {
         cursor: pointer;
         background-color: ${thems.colors.background.buttonhover};
         transition: 500ms;
@@ -46,15 +51,16 @@ export const Link = styled.a.attrs((href) => ({
         bottom: 0;
         left: 0;
         transform: scaleX(0);
+        transition: transform 500ms;
       }
 
-      &:hover {
+      &:hover,
+      &.active {
         cursor: pointer;
         &::before {
           transform: scaleX(1);
           transition: transform 500ms;
         }
-        transition: 500ms;
       }
     `}
 
@@ -65,6 +71,7 @@ export const Link = styled.a.attrs((href) => ({
       padding: 10px 0;
       align-self: flex-start;
       color: ${thems.colors.text.second};
+      transition: 500ms;
 
       &::before {
         content: "";
@@ -77,6 +84,7 @@ export const Link = styled.a.attrs((href) => ({
         bottom: 0;
         left: 0;
         transform: scaleX(0);
+        transition: transform 500ms;
       }
 
       &::after {

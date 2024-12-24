@@ -1,21 +1,40 @@
-import React from "react";
-import { Link } from "../../../../components/Link";
+import React, { useState } from "react";
+import { MyLink } from "../../../../components/Link";
 import { Menu } from "../menu/Menu";
 import { S } from "../menu/Menu";
 
-export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: {
-  menuItems: Array<string>;
-}) => {
+export const MobileMenu: React.FC = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const onBurgerBtnClick = () => {
+    setMenuIsOpen(!menuIsOpen);
+  };
   return (
     <S.BurgerMenu>
-      <Link href="#" linkType="primary">
+      <MyLink to={"contact"} smooth={true} linkType={"primary"}>
         Let&apos;s Talk
-      </Link>
-      <S.BurgerButton isOpen={false}>
+      </MyLink>
+      <S.BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
         <span></span>
       </S.BurgerButton>
-      <S.MenuPopup isOpen={false}>
-        <Menu menuItems={props.menuItems} />
+      <S.MenuPopup
+        isOpen={menuIsOpen}
+        onClick={() => {
+          setMenuIsOpen(false);
+        }}
+      >
+        <Menu />
+        <MyLink
+          activeClass={"active"}
+          spy={true}
+          to={"contact"}
+          smooth={true}
+          linkType={"primary"}
+          onClick={() => {
+            setMenuIsOpen(false);
+          }}
+        >
+          Let&apos;s Talk
+        </MyLink>
       </S.MenuPopup>
     </S.BurgerMenu>
   );

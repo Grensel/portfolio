@@ -1,8 +1,18 @@
 import styled from "styled-components";
-import { thems } from "../styles/Thems";
+import React from "react";
+import { animateScroll as scroll } from "react-scroll";
+import { thems } from "../../styles/Thems";
 
-export const Logo = () => {
-  return <StyledLogo>'So3'</StyledLogo>;
+export const Logo: React.FC = () => {
+  return (
+    <StyledLogo
+      onClick={() => {
+        scroll.scrollToTop();
+      }}
+    >
+      'So3'
+    </StyledLogo>
+  );
 };
 
 const StyledLogo = styled.a`

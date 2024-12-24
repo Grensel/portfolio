@@ -1,12 +1,10 @@
 import React from "react";
-import { Logo } from "../../components/Logo";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { S } from "./Header_Styles";
-import { MobileMenu } from "./headerMenu/burgerMenu/BurgerMenu";
 import { DesktopMenu } from "./headerMenu/desktopMenu/DesktopMenu";
-
-const items = ["Skills", "Projects", "About"];
+import { MobileMenu } from "./headerMenu/burgerMenu/BurgerMenu";
+import { Logo } from "../../components/logo/Logo";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -23,11 +21,7 @@ export const Header: React.FC = () => {
       <Container>
         <FlexWrapper justify={"space-between"} margin={"0 auto"}>
           <Logo />
-          {width < breakpoint ? (
-            <MobileMenu menuItems={items} />
-          ) : (
-            <DesktopMenu menuItems={items} />
-          )}
+          {width < breakpoint ? <MobileMenu /> : <DesktopMenu />}
         </FlexWrapper>
       </Container>
     </S.Header>

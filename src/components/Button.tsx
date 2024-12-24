@@ -13,6 +13,7 @@ export const Button = styled.button<LinkButtonPropsType>`
     css<LinkButtonPropsType>`
       background-color: ${thems.colors.background.button};
       color: ${thems.colors.text.second};
+      transition: 500ms;
 
       &:hover {
         cursor: pointer;

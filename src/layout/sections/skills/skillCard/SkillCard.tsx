@@ -1,8 +1,8 @@
 import { FlexWrapper } from "../../../../components/FlexWrapper";
-import { Icon } from "../../../../components/Icon";
 import { thems } from "../../../../styles/Thems";
 import React from "react";
 import { S } from "../Skills_Styles";
+import { Icon } from "../../../../components/icon/Icon";
 
 type SkillCardPropsType = {
   skillNumber: string;

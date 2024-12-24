@@ -1,9 +1,10 @@
 import React from "react";
-import { Icon } from "../../components/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { thems } from "../../styles/Thems";
 import { Container } from "../../components/Container";
 import { S } from "./Footer_Styles";
+import { Icon } from "../../components/icon/Icon";
+import { Zoom } from "react-awesome-reveal";
 
 const iconsData = [
   {
@@ -39,21 +40,23 @@ export const Footer: React.FC = () => {
         <FlexWrapper justify="space-between" align="center">
           <S.Copyright>2025 All Rights Reserved</S.Copyright>
           <S.SocialList>
-            {iconsData.map((i, index) => {
-              return (
-                <S.SocialItem>
-                  <S.SocialLink>
-                    <Icon
-                      key={index}
-                      iconId={i.iconId}
-                      height={i.height}
-                      width={i.width}
-                      fill={i.fill}
-                    />
-                  </S.SocialLink>
-                </S.SocialItem>
-              );
-            })}
+            <Zoom cascade={true} damping={0.1}>
+              {iconsData.map((i, index) => {
+                return (
+                  <S.SocialItem>
+                    <S.SocialLink>
+                      <Icon
+                        key={index}
+                        iconId={i.iconId}
+                        height={i.height}
+                        width={i.width}
+                        fill={i.fill}
+                      />
+                    </S.SocialLink>
+                  </S.SocialItem>
+                );
+              })}
+            </Zoom>
           </S.SocialList>
         </FlexWrapper>
       </Container>

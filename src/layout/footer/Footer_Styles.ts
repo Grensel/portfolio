@@ -25,7 +25,7 @@ const Copyright = styled.small`
   ${font({
     family: "Roboto",
     weight: 400,
-    color: thems.colors.text.second,
+    color: thems.colors.footer,
   })}
   font-size: 14px;
 `;
@@ -35,14 +35,16 @@ const SocialList = styled.ul`
   gap: 22px;
 `;
 
-const SocialItem = styled.li``;
-
-const SocialLink = styled.a`
-  position: relative;
+const SocialItem = styled.li`
+  transform: rotate(-360deg);
+  transition: 700ms;
   &:hover {
-    bottom: 4px;
+    transform: rotate(360deg);
+    transition: 700ms;
   }
 `;
+
+const SocialLink = styled.a``;
 
 export const S = {
   Footer,

@@ -11,7 +11,6 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
   }
 
-
   h1 {
       ${font({
         color: `${thems.colors.text.title}`,

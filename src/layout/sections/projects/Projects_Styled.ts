@@ -33,6 +33,7 @@ const ProjectTitle = styled.h4`
     Fmax: 45,
   })}
 `;
+
 const Bigspan = styled.span`
   ${font({
     weight: 200,
@@ -60,6 +61,23 @@ const ProjectDiscription = styled.p`
   })}
 `;
 
+const Slider = styled.div``;
+
+const SlideCard = styled.div<{ urlImg?: string }>`
+  /* display: none; */
+  display: flex;
+  gap: 85px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(${(props) => props.urlImg || null}) no-repeat;
+  background-size: cover;
+  padding: 94px 46px 100px;
+  @media ${thems.media.tablet} {
+    flex-direction: column;
+    gap: 24px;
+    padding: 66px 15px 80px;
+  }
+`;
+
 export const S = {
   Project,
   ProjectCard,
@@ -67,4 +85,6 @@ export const S = {
   ProjectTitle,
   Bigspan,
   ProjectDiscription,
+  Slider,
+  SlideCard,
 };

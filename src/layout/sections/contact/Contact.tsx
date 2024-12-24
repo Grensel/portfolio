@@ -7,7 +7,7 @@ import { Container } from "../../../components/Container";
 
 export const Contact: React.FC = () => {
   return (
-    <S.Contact>
+    <S.Contact id={"contact"}>
       <Container>
         <Title>CONTACT</Title>
         <FlexWrapper justify={"space-around"} gap={50} wrap={"wrap"}>

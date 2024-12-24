@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import sprite from "../assets/img/sprite.svg";
-import { thems } from "../styles/Thems";
+import sprite from "../../assets/img/sprite.svg";
+import { thems } from "../../styles/Thems";
+import React from "react";
 
 type IconPropsType = {
   iconId: string;
@@ -10,7 +11,7 @@ type IconPropsType = {
   fill?: string;
 };
 
-export const Icon = (props: IconPropsType) => {
+export const Icon: React.FC<IconPropsType> = (props: IconPropsType) => {
   return (
     <StyledSvg
       width={props.width || "50"}

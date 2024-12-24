@@ -2,12 +2,13 @@ import React from "react";
 import { S } from "./Projects_Styled";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Title } from "../../../components/SectionTitle";
-import { Project } from "./projectCard/ProjectCard";
+import { ProjectCard } from "./projectCard/ProjectCard";
 import { Container } from "../../../components/Container";
 
 import ProjectImg1 from "../../../assets/img/image.png";
 import ProjectImg2 from "../../../assets/img/image.png";
 import ProjectImg3 from "../../../assets/img/image.png";
+import { Slider } from "./slider/Slider";
 
 const projectData = [
   {
@@ -40,29 +41,44 @@ const projectData = [
 ];
 
 export const Projects: React.FC = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 768;
+
+  React.useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
-    <S.Project>
+    <S.Project id={"projects"}>
       <Container>
         <FlexWrapper direction={"column"}>
           <Title>
             MY <br />
             PROJECTS
           </Title>
-          <FlexWrapper direction={"column"} gap={80}>
-            {projectData.map((p, index) => {
-              return (
-                <Project
-                  key={index}
-                  urlImg={p.urlImg}
-                  projectType={p.projectType}
-                  workType={p.workType}
-                  projectTitle={p.projectTitle}
-                  projectDiscription={p.projectDiscription}
-                  href={p.href}
-                />
-              );
-            })}
-          </FlexWrapper>
+          {width < breakpoint ? (
+            <div>
+              <Slider />
+            </div>
+          ) : (
+            <FlexWrapper direction={"column"} gap={80}>
+              {projectData.map((p, index) => {
+                return (
+                  <ProjectCard
+                    key={index}
+                    urlImg={p.urlImg}
+                    projectType={p.projectType}
+                    workType={p.workType}
+                    projectTitle={p.projectTitle}
+                    projectDiscription={p.projectDiscription}
+                    href={p.href}
+                  />
+                );
+              })}
+            </FlexWrapper>
+          )}
         </FlexWrapper>
       </Container>
     </S.Project>

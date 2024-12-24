@@ -1,19 +1,37 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Link } from "../../../../components/Link";
+import { MyLink } from "../../../../components/Link";
 import { thems } from "../../../../styles/Thems";
 
-export const Menu: React.FC<{ menuItems: Array<string> }> = (props: {
-  menuItems: Array<string>;
-}) => {
+const MenuData = [
+  {
+    title: "Skills",
+    to: "skills",
+  },
+  {
+    title: "Projects",
+    to: "projects",
+  },
+  {
+    title: "About",
+    to: "about",
+  },
+];
+
+export const Menu: React.FC = () => {
   return (
     <MenuList>
-      {props.menuItems.map((item: string, index: number) => {
+      {MenuData.map((m, index) => {
         return (
           <MenuItem key={index}>
-            <Link href="#" linkType="menu">
-              {item}
-            </Link>
+            <MyLink
+              activeClass={"active"}
+              spy={true}
+              to={m.to}
+              linkType={"menu"}
+            >
+              {m.title}
+            </MyLink>
           </MenuItem>
         );
       })}
@@ -49,7 +67,7 @@ const BurgerMenu = styled.nav`
   padding: 25px;
 `;
 
-const BurgerButton = styled.div<{ isOpen: boolean }>`
+const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
   top: -100px;
   right: -100px;
