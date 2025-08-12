@@ -18,7 +18,11 @@ const MenuData = [
   },
 ];
 
-export const Menu: React.FC = () => {
+type MenuPropsType = {
+  onClick?: () => void
+}
+
+export const Menu: React.FC<MenuPropsType> = ({ onClick }) => {
   return (
     <MenuList>
       {MenuData.map((m, index) => {
@@ -29,6 +33,7 @@ export const Menu: React.FC = () => {
               spy={true}
               to={m.to}
               linkType={"menu"}
+              onClick={onClick}
             >
               {m.title}
             </MyLink>
@@ -86,8 +91,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     bottom: 60px;
 
     ${(props) =>
-      props.isOpen &&
-      css<{ isOpen: boolean }>`
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
         background-color: rgba(45, 44, 44, 0);
       `}
 
@@ -101,8 +106,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(-10px);
 
       ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
           transform: rotate(-45deg) translateY(0px);
         `}
     }
@@ -116,8 +121,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(10px);
 
       ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
           transform: rotate(45deg) translateY(0px);
         `}
     }

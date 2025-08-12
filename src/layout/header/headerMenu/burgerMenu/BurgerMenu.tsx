@@ -22,7 +22,9 @@ export const MobileMenu: React.FC = () => {
           setMenuIsOpen(false);
         }}
       >
-        <Menu />
+        <Menu onClick={() => {
+          setMenuIsOpen(false);
+        }} />
         <MyLink
           activeClass={"active"}
           spy={true}
