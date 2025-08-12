@@ -53,6 +53,22 @@ const SkillData = [
     description:
       "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
   },
+  {
+    skillNumber: "07",
+    skillTitle: "Unit Tests",
+    iconId: "scv",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
+  {
+    skillNumber: "08",
+    skillTitle: "Reducer",
+    iconId: "scv",
+    fill: `${thems.colors.text.second}`,
+    description:
+      "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+  },
 ];
 
 export const Skills: React.FC = () => {

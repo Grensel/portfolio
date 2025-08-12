@@ -52,7 +52,7 @@ const MenuList = styled.ul`
   gap: 12px;
   @media ${thems.media.tablet} {
     flex-direction: column;
-    gap: 22px;
+    gap: 50px;
   }
 `;
 
@@ -140,8 +140,9 @@ const MenuPopup = styled.div<{ isOpen: boolean }>`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      padding: 30px;
+      gap: 40px;
     `}
 `;
 

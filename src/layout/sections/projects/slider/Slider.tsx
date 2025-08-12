@@ -5,8 +5,8 @@ import { ProjectCard } from "../projectCard/ProjectCard";
 import { S } from "../Projects_Styled";
 
 import ProjectImg1 from "../../../../assets/img/image.png";
-// import ProjectImg2 from "../../../../assets/img/image.png";
-// import ProjectImg3 from "../../../../assets/img/image.png";
+import ProjectImg2 from "../../../../assets/img/image.png";
+import ProjectImg3 from "../../../../assets/img/image.png";
 
 const projectData = [
   {
@@ -18,42 +18,40 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
     href: "#",
   },
-  // {
-  //   urlImg: ProjectImg2,
-  //   projectType: "Fashion Show",
-  //   workType: "A Case Study",
-  //   projectTitle: "Enjoy Fashion Shows From Home",
-  //   projectDiscription:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-  //   href: "#",
-  // },
-  // {
-  //   urlImg: ProjectImg3,
-  //   projectType: "Barbeque",
-  //   workType: "Branding",
-  //   projectTitle: "Chicken Barbeque Never Goes Wrong",
-  //   projectDiscription:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-  //   href: "#",
-  // },
+  {
+    urlImg: ProjectImg2,
+    projectType: "Fashion Show",
+    workType: "A Case Study",
+    projectTitle: "Enjoy Fashion Shows From Home",
+    projectDiscription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+    href: "#",
+  },
+  {
+    urlImg: ProjectImg3,
+    projectType: "Barbeque",
+    workType: "Branding",
+    projectTitle: "Chicken Barbeque Never Goes Wrong",
+    projectDiscription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+    href: "#",
+  },
 ];
 
 export const Slider: React.FC = () => {
-  const items = [
-    projectData.map((p, index) => {
-      return (
-        <ProjectCard
-          key={index}
-          urlImg={p.urlImg}
-          projectType={p.projectType}
-          workType={p.workType}
-          projectTitle={p.projectTitle}
-          projectDiscription={p.projectDiscription}
-          href={p.href}
-        />
-      );
-    }),
-  ];
+  const items = projectData.map((p, index) => {
+    return (
+      <ProjectCard
+        key={index}
+        urlImg={p.urlImg}
+        projectType={p.projectType}
+        workType={p.workType}
+        projectTitle={p.projectTitle}
+        projectDiscription={p.projectDiscription}
+        href={p.href}
+      />
+    );
+  });
 
   return (
     <S.Slider>

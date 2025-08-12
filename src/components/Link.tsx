@@ -62,6 +62,10 @@ export const MyLink = styled(Link).attrs((props: LinkPropsType) => ({
           transition: transform 500ms;
         }
       }
+
+      /* @media ${thems.media.tablet} {
+        
+      } */
     `}
 
     ${(props) =>

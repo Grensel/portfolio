@@ -36,7 +36,7 @@ const MapTitle = styled.h3`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 480px;
   height: 100%;
   padding: 20px;
   gap: 16px;
@@ -48,6 +48,10 @@ const StyledForm = styled.form`
     @media ${thems.media.tablet} {
       min-height: 100px;
     }
+  }
+
+  @media ${thems.media.tablet} {
+    align-self: center;
   }
 `;
 

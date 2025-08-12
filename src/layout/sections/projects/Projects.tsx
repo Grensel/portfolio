@@ -6,8 +6,8 @@ import { ProjectCard } from "./projectCard/ProjectCard";
 import { Container } from "../../../components/Container";
 
 import ProjectImg1 from "../../../assets/img/image.png";
-import ProjectImg2 from "../../../assets/img/image.png";
-import ProjectImg3 from "../../../assets/img/image.png";
+import ProjectImg2 from "../../../assets/img/photo.png";
+import ProjectImg3 from "../../../assets/img/Bonsai.jpg";
 import { Slider } from "./slider/Slider";
 
 const projectData = [

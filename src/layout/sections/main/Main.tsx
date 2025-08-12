@@ -14,7 +14,13 @@ export const Main: React.FC = () => {
             I&apos;M SERGEY
           </S.MainTitel>
           <S.Description>
-            FRONT-END
+            <Typewriter
+              options={{
+                strings: ["FRONT-END", "WEB"],
+                autoStart: true,
+                loop: true,
+              }}
+            ></Typewriter>
             <Typewriter
               options={{
                 strings: ["DEVELOPER"],

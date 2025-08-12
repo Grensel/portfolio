@@ -1,11 +1,34 @@
-import React from "react";
+import React, { ElementRef, useRef } from "react";
 import { S } from "./Contact_Styled";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Title } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
+import emailjs from '@emailjs/browser';
 
 export const Contact: React.FC = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!form.current) return
+
+    emailjs
+      .sendForm('service_at30kv9', 'template_ap61mlq', form.current, {
+        publicKey: '95kBhrRxWNqjVPbTe',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    form.current.reset();
+  };
+
   return (
     <S.Contact id={"contact"}>
       <Container>
@@ -14,15 +37,15 @@ export const Contact: React.FC = () => {
           <S.ContactBox>
             <FlexWrapper direction="column" gap={20}>
               <S.ContactTitle>Send Me</S.ContactTitle>
-              <S.StyledForm>
+              <S.StyledForm ref={form} onSubmit={sendEmail}>
                 <FlexWrapper height={"auto"} gap={16}>
                   <FlexWrapper direction={"column"} gap={16} grow={1}>
                     <S.FieldTitle htmlFor={"email"}>Your Email</S.FieldTitle>
-                    <S.Field id={"email"} placeholder={"Your Email"}></S.Field>
+                    <S.Field id={"email"} placeholder={"Your Email"} name={'user_email'}></S.Field>
                   </FlexWrapper>
                   <FlexWrapper direction={"column"} gap={16} grow={1}>
                     <S.FieldTitle htmlFor={"subject"}>Subject</S.FieldTitle>
-                    <S.Field id={"subject"} placeholder={"Subject"}></S.Field>
+                    <S.Field id={"subject"} placeholder={"Subject"} name={'subject'}></S.Field>
                   </FlexWrapper>
                 </FlexWrapper>
                 <S.FieldTitle htmlFor={"textarea"}>You massage</S.FieldTitle>
@@ -30,6 +53,7 @@ export const Contact: React.FC = () => {
                   id={"textarea"}
                   placeholder={"Your massage"}
                   as={"textarea"}
+                  name={"message"}
                 ></S.Field>
                 <FlexWrapper height="auto" gap={16}>
                   <Button btnType={"contact"} type={"submit"}>
