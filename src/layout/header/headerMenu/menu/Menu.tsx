@@ -145,7 +145,7 @@ const MenuPopup = styled.div<{ isOpen: boolean }>`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       padding: 30px;
       gap: 40px;
     `}
